@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cream: #FDFBF7;
+    --color-cream-dark: #F5EFE6;
+    --color-brown-deep: #2A1710;
+    --color-brown-rich: #3D2318;
+    --color-brown-muted: #5C3D2E;
+    --color-gold: #C89D4B;
+    --color-gold-light: #DFBE7A;
+    --color-gold-dark: #A47B2E;
+    --color-veg-green: #15803D;
+    --color-veg-dark: #0D5426;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-brown-deep);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-tamil {
+    font-family: 'Noto Sans Tamil', 'Mukta Malar', sans-serif;
+  }
+}
+
+/* Custom Utilities for Premium South Indian Restaurant Aesthetics */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFBE7A 0%, #C89D4B 50%, #996E25 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #DFBE7A, #C89D4B, #996E25) 1;
+}
+
+.bg-pattern-kolam {
+  background-color: #FDFBF7;
+  background-image: radial-gradient(#C89D4B 0.75px, transparent 0.75px), radial-gradient(#C89D4B 0.75px, #FDFBF7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.05;
+}
+
+.glass-nav {
+  background: rgba(253, 251, 247, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(42, 23, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Pure Veg Indicator Badge */
+.pure-veg-symbol {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #15803D;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background: #ffffff;
+}
+
+.pure-veg-symbol-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #15803D;
+  border-radius: 50%;
+}
+
