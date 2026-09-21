@@ -4,6 +4,7 @@
       home: "Home",
       about: "About Us",
       menu: "Menu",
+      facilities: "Facilities",
       gallery: "Gallery",
       reviews: "Reviews",
       contact: "Contact",
@@ -30,6 +31,37 @@
       highwayDesc: "Minnur / Vaniyambadi",
       parking: "Convenient Parking",
       parkingDesc: "Spacious Front Lot"
+    },
+    homeFacilities: {
+      badge: "COMPLETE HIGHWAY STOP",
+      heading: "More Than a Restaurant",
+      subheading: "Dining, stay and traveller-friendly facilities in one convenient location along the NH.",
+      exploreAll: "Explore All Facilities →",
+      cards: [
+        { title: "Pure Vegetarian Dining", desc: "Authentic South Indian vegetarian food, crispy dosas, and filter coffee." },
+        { title: "Comfortable Rooms", desc: "Clean and pleasant stay at GR Residency for travellers and families." },
+        { title: "Parking Facility", desc: "Convenient and safe on-premise parking for personal cars and vehicles." },
+        { title: "EV Charging Facility", desc: "Jio-bp Pulse fast EV charging station available for electric vehicle drivers." },
+        { title: "Near NH Main Road", desc: "Prime direct highway access at Chengilikuppam, Vaniyambadi." }
+      ]
+    },
+    facilitiesPage: {
+      badge: "OUR FACILITIES",
+      heading: "Everything You Need for a Comfortable Visit",
+      subtitle: "More than a meal — a comfortable stop for dining, stay and travel.",
+      highlightsHeading: "Key Facilities at Hotel Anandhaas Minnur",
+      highlightsSub: "Designed with care to make your journey and dining experience relaxing and enjoyable.",
+      roomsGalleryTitle: "Stay at GR Residency",
+      roomsGallerySub: "Comfortable rooms for guests and travellers.",
+      roomsGalleryHint: "Click on any photo to view in high-resolution full screen.",
+      evSectionBadge: "FAST EV RECHARGING",
+      evSectionTitle: "Charge & Continue Your Journey",
+      evSectionDesc: "Travelling by EV? A Jio-bp Pulse charging facility is available at the location, making it convenient to take a break while charging your vehicle.",
+      evDirectionsBtn: "Get Directions to EV Station",
+      evNotice: "Charging facility availability subject to network operation. Confirm on site.",
+      cleanStayBadge: "MODERN & HYGIENIC",
+      cleanStayTitle: "Clean & Modern Stay",
+      cleanStayDesc: "Enjoy a clean and comfortable stay with modern room interiors, clean bathrooms, and serene highway surroundings."
     },
     vegIntro: {
       badge: "TRADITION & PURITY",
@@ -137,9 +169,9 @@
       mapHint: "Click 'Get Directions' to open turn-by-turn navigation on your mobile or GPS device."
     },
     finalCta: {
-      heading: "Hungry? We're Ready to Serve You.",
-      subheading: "Visit Hotel Anandhaas Minnur and enjoy a delicious Pure Vegetarian dining experience.",
-      viewMenu: "View Full Menu",
+      heading: "Planning a Visit?",
+      subheading: "Enjoy Pure Vegetarian food, comfortable accommodation and convenient traveller facilities at Hotel Anandhaas Minnur.",
+      viewMenu: "View Menu",
       callNow: "Call: 093616 66099",
       getDirections: "Get Directions"
     },
@@ -149,7 +181,7 @@
       contactUs: "Contact & Location",
       timingsTitle: "Operating Hours",
       findOnGoogle: "Find Us on Google Maps",
-      rightsReserved: "All Rights Reserved. Pure Vegetarian Restaurant.",
+      rightsReserved: "All Rights Reserved. Pure Vegetarian Restaurant & GR Residency.",
       disclaimerNote: "Official informational portal. For inquiries, please call us directly."
     },
     mobileBar: {
@@ -164,6 +196,7 @@
       home: "முகப்பு",
       about: "எங்களை பற்றி",
       menu: "உணவு பட்டியல்",
+      facilities: "வசதிகள்",
       gallery: "புகைப்படங்கள்",
       reviews: "மதிப்புரைகள்",
       contact: "தொடர்புக்கு",
@@ -190,6 +223,37 @@
       highwayDesc: "மின்னூர் / வாணியம்பாடி",
       parking: "வசதியான பார்க்கிங்",
       parkingDesc: "விசாலமான வாகன நிறுத்துமிடம்"
+    },
+    homeFacilities: {
+      badge: "பயணிகளுக்கு அனைத்து வசதிகளும்",
+      heading: "உணவகத்தை விட மேலான அனுபவம்",
+      subheading: "உணவு, தங்குமிடம் மற்றும் வாகன வசதிகள் அனைத்தும் ஒரே இடத்தில்.",
+      exploreAll: "அனைத்து வசதிகளையும் பார்க்க →",
+      cards: [
+        { title: "தூய சைவ உணவகம்", desc: "சுவையான தென்னிந்திய வாழை இலை சாப்பாடு, தோசை மற்றும் காபி." },
+        { title: "வசதியான தங்கும் அறைகள்", desc: "ஜிஆர் ரெசிடென்சியில் குடும்பத்தோடு தங்க சுத்தமான ஏசி அறைகள்." },
+        { title: "பார்க்கிங் வசதி", desc: "கார்கள் மற்றும் வாகனங்களுக்கு விசாலமான மற்றும் பாதுகாப்பான நிறுத்துமிடம்." },
+        { title: "மின்னூர்தி (EV) சார்ஜிங்", desc: "மின்சார வாகனங்களுக்கு Jio-bp Pulse அதிவேக சார்ஜிங் வசதி." },
+        { title: "நெடுஞ்சாலை அருகில்", desc: "வாணியம்பாடி தேசிய நெடுஞ்சாலையில் எளிதாக வந்தடையும் இடம்." }
+      ]
+    },
+    facilitiesPage: {
+      badge: "எங்கள் வசதிகள்",
+      heading: "உங்கள் சௌகரியமான வருகைக்கு தேவையான அனைத்தும்",
+      subtitle: "வெறும் உணவல்ல — உணவு, தங்குமிடம் மற்றும் பயணத்திற்கு ஏற்ற முழுமையான நிறுத்தம்.",
+      highlightsHeading: "ஹோட்டல் ஆனந்தாஸ் மின்னூரின் முக்கிய வசதிகள்",
+      highlightsSub: "உங்கள் பயணத்தை இனிமையாகவும் மனநிறைவாகவும் மாற்ற வடிவமைக்கப்பட்ட சிறப்பம்சங்கள்.",
+      roomsGalleryTitle: "ஜிஆர் ரெசிடென்சி தங்கும் வசதி",
+      roomsGallerySub: "பயணிகளுக்கும் விருந்தினர்களுக்கும் சௌகரியமான அறைகள்.",
+      roomsGalleryHint: "முழு திரையில் பார்க்க படத்தை கிளிக் செய்யவும்.",
+      evSectionBadge: "மின்னூர்தி சார்ஜிங்",
+      evSectionTitle: "சார்ஜ் செய்து பயணத்தை தொடருங்கள்",
+      evSectionDesc: "மின்சார வாகனத்தில் பயணிக்கிறீர்களா? இங்குள்ள Jio-bp Pulse சார்ஜிங் வசதி மூலம் வாகனம் சார்ஜ் ஆகும் நேரத்தில் நீங்கள் உணவருந்தி ஓய்வெடுக்கலாம்.",
+      evDirectionsBtn: "சார்ஜிங் நிலைய வழித்தடம்",
+      evNotice: "சார்ஜிங் நிலையம் செயல்படும் நேரத்தை உறுதிப்படுத்திக் கொள்ளவும்.",
+      cleanStayBadge: "நவீன மற்றும் தூய்மை",
+      cleanStayTitle: "தூய்மையான தங்கும் அனுபவம்",
+      cleanStayDesc: "நவீன உட்புற வசதிகள், சுத்தமான குளியலறை மற்றும் அமைதியான நெடுஞ்சாலை சூழல்."
     },
     vegIntro: {
       badge: "பாரம்பரியம் மற்றும் தூய்மை",
@@ -297,19 +361,19 @@
       mapHint: "வழித்தடம் பொத்தானை அழுத்தி ஜிபிஎஸ் மூலம் எளிதாக வந்து சேருங்கள்."
     },
     finalCta: {
-      heading: "பசியாற தயாரா? நாங்கள் வரவேற்கிறோம்.",
-      subheading: "ஹோட்டல் ஆனந்தாஸ் மின்னூருக்கு வருகை தந்து தூய தென்னிந்திய சுவையை அனுபவியுங்கள்.",
-      viewMenu: "உணவு பட்டியல் பார்க்க",
+      heading: "வருகை தர திட்டமா?",
+      subheading: "தூய சைவ உணவு, வசதியான தங்குமிடம் மற்றும் பயனுள்ள நெடுஞ்சாலை வசதிகளை அனுபவிக்க ஹோட்டல் ஆனந்தாஸ் மின்னூருக்கு வருகை தாருங்கள்.",
+      viewMenu: "உணவு பட்டியல்",
       callNow: "அழைக்க: 093616 66099",
       getDirections: "வழித்தடம் பெற"
     },
     footer: {
-      brandDesc: "ஹோட்டல் ஆனந்தாஸ் மின்னூர் வாணியம்பாடி தேசிய நெடுஞ்சாலையில் அமைந்துள்ள பாரம்பரிய சுவைமிக்க தூய தென்னிந்திய சைவ உணவகம்.",
+      brandDesc: "ஹோட்டல் ஆனந்தாஸ் மின்னூர் வாணியம்பாடி தேசிய நெடுஞ்சாலையில் அமைந்துள்ள பாரம்பரிய சுவைமிக்க தூய தென்னிந்திய சைவ உணவகம் மற்றும் ஜிஆர் ரெசிடென்சி.",
       quickLinks: "விரைவு இணைப்புகள்",
       contactUs: "தொடர்பு & முகவரி",
       timingsTitle: "செயல்படும் நேரம்",
       findOnGoogle: "கூகிள் மேப்ஸில் பார்க்க",
-      rightsReserved: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. தூய சைவ உணவகம்.",
+      rightsReserved: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. தூய சைவ உணவகம் & ஜிஆர் ரெசிடென்சி.",
       disclaimerNote: "தகவல் தளம் மட்டுமே. சந்தேகங்களுக்கு நேரடியாக அழைக்கவும்."
     },
     mobileBar: {

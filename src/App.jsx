@@ -10,6 +10,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { MenuPage } from './pages/MenuPage';
+import { FacilitiesPage } from './pages/FacilitiesPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { ReviewsPage } from './pages/ReviewsPage';
 import { ContactPage } from './pages/ContactPage';
@@ -31,6 +32,7 @@ const AnimatedRoutes = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/menu" element={<MenuPage />} />
+          <Route path="/facilities" element={<FacilitiesPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/contact" element={<ContactPage />} />

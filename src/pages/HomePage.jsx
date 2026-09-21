@@ -1,9 +1,10 @@
-﻿import React from 'react';
+import React from 'react';
 import { Hero } from '../components/Hero';
 import { InfoStrip } from '../components/InfoStrip';
 import { VegIntro } from '../components/VegIntro';
 import { NHTravellerSection } from '../components/NHTravellerSection';
 import { FoodHighlights } from '../components/FoodHighlights';
+import { HomeFacilitiesPreview } from '../components/HomeFacilitiesPreview';
 import { RestaurantExperience } from '../components/RestaurantExperience';
 import { LocationSection } from '../components/LocationSection';
 import { ReviewsSection } from '../components/ReviewsSection';
@@ -17,6 +18,7 @@ export const HomePage = () => {
       <VegIntro />
       <NHTravellerSection />
       <FoodHighlights />
+      <HomeFacilitiesPreview />
       <RestaurantExperience />
       <LocationSection />
       <ReviewsSection />
