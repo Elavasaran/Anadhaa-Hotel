@@ -70,7 +70,7 @@ export const Navbar = () => {
               className="flex items-center gap-1.5 text-[#DFBE7A] hover:text-white transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#C89D4B]" />
-              <span>093616 66099</span>
+              <span>{restaurantInfo.contact.displayPhone}</span>
             </a>
             <span className="text-stone-600">|</span>
             <button
@@ -259,9 +259,9 @@ export const Navbar = () => {
                 <div className="text-xs text-stone-300 space-y-1">
                   <p className="font-semibold text-[#DFBE7A] flex items-center gap-1.5">
                     <MapPin className="w-3.5 h-3.5" />
-                    Near NH, Vaniyambadi, Chengilikuppam
+                    Chennai - Bangalore Highway (TANSI)
                   </p>
-                  <p className="text-stone-400 pl-5">Tamil Nadu 635807</p>
+                  <p className="text-stone-400 pl-5">Chengilikuppam - 635 751, Ambur Taluk</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2 pt-2">

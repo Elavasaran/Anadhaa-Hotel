@@ -1,4 +1,4 @@
-﻿import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
@@ -311,7 +311,7 @@ export const FacilitiesPage = () => {
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#2A1710] text-[#DFBE7A] hover:bg-[#3D2318] text-xs sm:text-sm font-bold shadow-sm transition-all"
             >
               <Phone className="w-4 h-4" />
-              <span>Call Front Desk: 093616 66099</span>
+              <span>Call Front Desk: {restaurantInfo.contact.phone}</span>
             </a>
           </div>
 
@@ -369,7 +369,7 @@ export const FacilitiesPage = () => {
                   className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-stone-200 border border-white/20 text-sm font-medium transition-all"
                 >
                   <Phone className="w-4 h-4 text-[#DFBE7A]" />
-                  <span>Confirm Status: 093616 66099</span>
+                  <span>Confirm Status: {restaurantInfo.contact.phone}</span>
                 </a>
               </div>
 

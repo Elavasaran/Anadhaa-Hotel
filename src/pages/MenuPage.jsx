@@ -186,7 +186,7 @@ export const MenuPage = () => {
             <p className="text-stone-600 mt-1">
               For catering enquiries, bulk travel stops, or special dietary questions, call us directly at{' '}
               <a href={restaurantInfo.contact.telLink} className="font-bold underline text-emerald-800">
-                093616 66099
+                {restaurantInfo.contact.phone}
               </a>.
             </p>
           </div>
@@ -199,7 +199,7 @@ export const MenuPage = () => {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#2A1710] text-[#DFBE7A] hover:bg-[#3D2318] text-sm font-semibold shadow-md transition-all"
           >
             <Phone className="w-4 h-4" />
-            <span>Call Restaurant: 093616 66099</span>
+            <span>Call Restaurant: {restaurantInfo.contact.phone}</span>
           </a>
           <a
             href={restaurantInfo.contact.googleMapsDirections}

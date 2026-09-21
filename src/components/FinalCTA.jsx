@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
@@ -62,7 +62,11 @@ export const FinalCTA = () => {
 
         {/* Address and Timings reminder */}
         <div className="mt-12 text-xs text-stone-400">
+<<<<<<< HEAD
           <p>📍 Near NH, Vaniyambadi, Chengilikuppam, Tamil Nadu 635807 • Open Daily: 7:30 AM – 11:30 PM</p>
+=======
+          <p>📍 {restaurantInfo.contact.address.full} • Open Daily: 10:30 AM – 11:30 PM</p>
+>>>>>>> 3f3d8d308b0039f0e69d52c7b4273723c263fd54
         </div>
 
       </div>

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { OpeningHours } from '../components/OpeningHours';
@@ -62,7 +62,7 @@ export const ContactPage = () => {
                   className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#2A1710] text-[#DFBE7A] font-semibold text-xs sm:text-sm hover:bg-[#3D2318] shadow-xs transition-all"
                 >
                   <Phone className="w-4 h-4 text-[#DFBE7A]" />
-                  <span>Call 093616 66099</span>
+                  <span>Call {restaurantInfo.contact.phone}</span>
                 </a>
 
                 <a
@@ -114,7 +114,7 @@ export const ContactPage = () => {
                       Telephone
                     </h3>
                     <p className="text-base font-bold text-emerald-900">
-                      093616 66099 / +91 93616 66099
+                      93616 66099 / +91 93616 66099
                     </p>
                     <p className="text-xs text-stone-500 mt-0.5">
                       Customer desk available during dining hours.

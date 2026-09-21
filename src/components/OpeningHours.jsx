@@ -108,6 +108,7 @@ export const OpeningHours = () => {
         ))}
       </div>
 
+<<<<<<< HEAD
       {/* Interactive Call to Action */}
       <a 
         href={restaurantInfo.contact.telLink} 
@@ -116,6 +117,16 @@ export const OpeningHours = () => {
         <div className="absolute inset-0 bg-white/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
         <div className="p-2.5 bg-[#DFBE7A]/20 bg-opacity-30 rounded-full group-hover:scale-110 group-hover:bg-[#DFBE7A]/30 transition-all shadow-inner relative z-10">
           <Phone className="w-5 h-5 text-[#DFBE7A]" />
+=======
+      {/* Note & Direct Call */}
+      <div className="p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-start gap-2">
+        <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+        <div>
+          <p className="font-medium">{language === 'ta' ? restaurantInfo.timings.noteTa : restaurantInfo.timings.note}</p>
+          <a href={restaurantInfo.contact.telLink} className="font-bold underline text-amber-950 mt-0.5 inline-block">
+            Call {restaurantInfo.contact.phone} to confirm today's schedule
+          </a>
+>>>>>>> 3f3d8d308b0039f0e69d52c7b4273723c263fd54
         </div>
         <div className="text-left relative z-10">
           <p className="font-bold text-sm tracking-wide text-[#FDFBF7]">Confirm Today's Schedule</p>
