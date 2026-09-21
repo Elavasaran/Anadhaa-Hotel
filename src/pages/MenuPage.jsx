@@ -1,4 +1,4 @@
-﻿import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { menuCategories, fullMenuItems } from '../data/menuData';
 import { restaurantInfo } from '../data/restaurantInfo';
@@ -12,11 +12,24 @@ import {
   AlertCircle,
   Clock
 } from 'lucide-react';
+import { FoodDetailModal } from '../components/FoodDetailModal';
 
 export const MenuPage = () => {
   const { language, t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedFood, setSelectedFood] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleFoodClick = (item) => {
+    setSelectedFood(item);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedFood(null), 200); // clear after animation
+  };
 
   const filteredItems = useMemo(() => {
     return fullMenuItems.filter(item => {
@@ -109,7 +122,8 @@ export const MenuPage = () => {
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group"
+                onClick={() => handleFoodClick(item)}
+                className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between group cursor-pointer"
               >
                 {/* Food Image */}
                 <div className="relative h-48 sm:h-52 overflow-hidden bg-stone-900">
@@ -199,6 +213,12 @@ export const MenuPage = () => {
         </div>
 
       </div>
+
+      <FoodDetailModal 
+        item={selectedFood}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 };

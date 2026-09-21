@@ -17,16 +17,16 @@
   body {
     background-color: var(--color-cream);
     color: var(--color-brown-deep);
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Futura', 'Century Gothic', 'Jost', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 
   h1, h2, h3, .font-serif-luxury {
-    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Futura', 'Century Gothic', 'Jost', sans-serif;
   }
 
   .font-cormorant {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Futura', 'Century Gothic', 'Jost', sans-serif;
   }
 
   .font-tamil {
