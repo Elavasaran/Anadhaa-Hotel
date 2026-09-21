@@ -81,7 +81,7 @@ export const AboutPage = () => {
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3D2318]/10 text-[#78350F] text-xs font-bold tracking-widest uppercase">
               <MapPin className="w-3.5 h-3.5 text-[#C89D4B]" />
-              <span>Minnur / Vaniyambadi, Tamil Nadu</span>
+              <span>Chengilikuppam / Vaniyambadi, Tamil Nadu</span>
             </div>
 
             <h2 className="font-serif font-black text-2xl sm:text-3xl md:text-4xl text-[#2A1710] tracking-tight leading-snug">

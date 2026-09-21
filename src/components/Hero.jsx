@@ -19,7 +19,7 @@ export const Hero = () => {
           animate={{ scale: 1.0 }}
           transition={{ duration: 1.8, ease: "easeOut" }}
           src={exteriorImg}
-          alt="Hotel Anandhaas Minnur Pure Vegetarian Restaurant Building along NH Highway"
+          alt="Hotel Anandhaas Chengilikuppam Pure Vegetarian Restaurant Building along NH Highway"
           className="w-full h-full object-cover object-center brightness-100 contrast-[1.03]"
           loading="eager"
         />
@@ -57,7 +57,7 @@ export const Hero = () => {
 
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 border border-stone-600 text-stone-200 text-xs font-normal backdrop-blur-md hidden sm:inline-flex">
               <Clock className="w-3 h-3 text-[#DFBE7A]" />
-              <span>10:30 AM – 11:30 PM</span>
+              <span>7:30 AM – 11:30 PM</span>
             </div>
           </motion.div>
 

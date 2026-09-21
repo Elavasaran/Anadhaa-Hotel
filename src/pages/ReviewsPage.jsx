@@ -55,7 +55,7 @@ export const ReviewsPage = () => {
                   <span>Verified Google Business Listing</span>
                 </div>
                 <p className="text-xs text-stone-600">
-                  Customer feedback submitted by guests visiting Hotel Anandhaas Minnur.
+                  Customer feedback submitted by guests visiting Hotel Anandhaas Chengilikuppam.
                 </p>
                 <a
                   href={restaurantInfo.contact.googleMapsLink}

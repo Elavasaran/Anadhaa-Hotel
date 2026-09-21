@@ -52,7 +52,7 @@ export const Lightbox = ({ isOpen, image, title, onClose, onPrev, onNext }) => {
       >
         <img
           src={image}
-          alt={title || "Hotel Anandhaas Minnur Gallery Image"}
+          alt={title || "Hotel Anandhaas Chengilikuppam Gallery Image"}
           className="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl border border-white/20"
         />
 

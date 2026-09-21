@@ -15,12 +15,12 @@
     hero: {
       pureVegBadge: "100% PURE VEGETARIAN RESTAURANT",
       mainHeading: "Authentic Vegetarian Taste, Served with Warmth",
-      subtext: "Experience delicious South Indian vegetarian cuisine in a comfortable dining space at Hotel Anandhaas Minnur.",
+      subtext: "Experience delicious South Indian vegetarian cuisine in a comfortable dining space at Hotel Anandhaas Chengilikuppam.",
       locationBadge: "Near NH, Vaniyambadi",
       exploreMenu: "Explore Menu",
       getDirections: "Get Directions",
       callNow: "Call Now",
-      openHoursNotice: "Open 10:30 AM – 11:30 PM"
+      openHoursNotice: "Open 7:30 AM – 11:30 PM"
     },
     infoStrip: {
       pureVeg: "Pure Vegetarian",
@@ -28,7 +28,7 @@
       cuisine: "South Indian Cuisine",
       cuisineDesc: "Authentic Traditional Recipes",
       highway: "Near NH Main Road",
-      highwayDesc: "Minnur / Vaniyambadi",
+      highwayDesc: "Chengilikuppam / Vaniyambadi",
       parking: "Convenient Parking",
       parkingDesc: "Spacious Front Lot"
     },
@@ -49,7 +49,7 @@
       badge: "OUR FACILITIES",
       heading: "Everything You Need for a Comfortable Visit",
       subtitle: "More than a meal — a comfortable stop for dining, stay and travel.",
-      highlightsHeading: "Key Facilities at Hotel Anandhaas Minnur",
+      highlightsHeading: "Key Facilities at Hotel Anandhaas Chengilikuppam",
       highlightsSub: "Designed with care to make your journey and dining experience relaxing and enjoyable.",
       roomsGalleryTitle: "Stay at GR Residency",
       roomsGallerySub: "Comfortable rooms for guests and travellers.",
@@ -66,7 +66,7 @@
     vegIntro: {
       badge: "TRADITION & PURITY",
       heading: "Pure Vegetarian. Simply Delicious.",
-      description: "At Hotel Anandhaas Minnur, we welcome guests with a selection of vegetarian dishes inspired by the flavours and traditions of South India. Crafted with fresh ingredients, time-tested recipes, and utmost care.",
+      description: "At Hotel Anandhaas Chengilikuppam, we welcome guests with a selection of vegetarian dishes inspired by the flavours and traditions of South India. Crafted with fresh ingredients, time-tested recipes, and utmost care.",
       cta: "Discover Anandhaas",
       pillars: {
         pureVeg: { title: "Pure Vegetarian", desc: "No meat, no compromise. Pure vegetarian standards." },
@@ -78,7 +78,7 @@
     nhSection: {
       badge: "HIGHWAY TRAVELLER CONVENIENCE",
       heading: "Your Vegetarian Stop Near NH",
-      description: "Travelling through Vaniyambadi? Stop by Hotel Anandhaas Minnur for a comfortable vegetarian dining experience.",
+      description: "Travelling through Vaniyambadi? Stop by Hotel Anandhaas Chengilikuppam for a comfortable vegetarian dining experience.",
       cta: "Get Highway Directions",
       cards: {
         easyFind: { title: "Easy to Find", desc: "Located right along the NH main road with effortless access." },
@@ -108,10 +108,10 @@
       badge: "OUR STORY & PROMISE",
       heading: "Welcome to Hotel Anandhaas",
       subheading: "A trusted sanctuary for authentic South Indian vegetarian dining on the highway.",
-      storyP1: "Hotel Anandhaas Minnur is a premier Pure Vegetarian Restaurant located conveniently near the NH main road in Chengilikuppam, Vaniyambadi, Tamil Nadu. We were established with a steadfast commitment to serving hygienic, nourishing, and authentic South Indian cuisine to travellers, local patrons, and families alike.",
+      storyP1: "Hotel Anandhaas Chengilikuppam is a premier Pure Vegetarian Restaurant located conveniently near the NH main road in Chengilikuppam, Vaniyambadi, Tamil Nadu. We were established with a steadfast commitment to serving hygienic, nourishing, and authentic South Indian cuisine to travellers, local patrons, and families alike.",
       storyP2: "Whether you are embarking on a long highway journey or stopping by with your family for an evening tiffin, our spacious dining hall, attentive service, and pure vegetarian dishes ensure a rejuvenating pitstop.",
       valuesHeading: "Our Core Pillars",
-      valuesSub: "The four principles that define every meal we serve at Hotel Anandhaas Minnur.",
+      valuesSub: "The four principles that define every meal we serve at Hotel Anandhaas Chengilikuppam.",
       values: {
         taste: "Taste",
         quality: "Quality",
@@ -148,11 +148,11 @@
     timings: {
       badge: "OPERATING HOURS",
       heading: "Visit Us",
-      restaurantName: "Hotel Anandhaas Minnur",
-      timingsText: "10:30 AM – 11:30 PM",
+      restaurantName: "Hotel Anandhaas Chengilikuppam",
+      timingsText: "7:30 AM – 11:30 PM",
       statusOpen: "OPEN NOW",
       statusClosed: "CURRENTLY CLOSED",
-      opensAt: "Opens at 10:30 AM",
+      opensAt: "Opens at 7:30 AM",
       closesAt: "Closes at 11:30 PM",
       disclaimer: "Please confirm current timings before final travel.",
       sevenDays: "Open All 7 Days • Monday through Sunday"
@@ -170,13 +170,13 @@
     },
     finalCta: {
       heading: "Planning a Visit?",
-      subheading: "Enjoy Pure Vegetarian food, comfortable accommodation and convenient traveller facilities at Hotel Anandhaas Minnur.",
+      subheading: "Enjoy Pure Vegetarian food, comfortable accommodation and convenient traveller facilities at Hotel Anandhaas Chengilikuppam.",
       viewMenu: "View Menu",
       callNow: "Call: 093616 66099",
       getDirections: "Get Directions"
     },
     footer: {
-      brandDesc: "Hotel Anandhaas Minnur is your trusted Pure Vegetarian restaurant near the NH main road in Vaniyambadi, serving authentic South Indian tastes with warmth.",
+      brandDesc: "Hotel Anandhaas Chengilikuppam is your trusted Pure Vegetarian restaurant near the NH main road in Vaniyambadi, serving authentic South Indian tastes with warmth.",
       quickLinks: "Quick Links",
       contactUs: "Contact & Location",
       timingsTitle: "Operating Hours",
@@ -212,7 +212,7 @@
       exploreMenu: "உணவு பட்டியல்",
       getDirections: "வழித்தடம் பார்க்க",
       callNow: "உடனடி அழைப்பு",
-      openHoursNotice: "நேரம்: காலை 10:30 – இரவு 11:30"
+      openHoursNotice: "நேரம்: காலை 7:30 – இரவு 11:30"
     },
     infoStrip: {
       pureVeg: "தூய சைவம்",
@@ -341,10 +341,10 @@
       badge: "உணவக நேரம்",
       heading: "நேரடி வருகை",
       restaurantName: "ஹோட்டல் ஆனந்தாஸ் மின்னூர்",
-      timingsText: "காலை 10:30 – இரவு 11:30",
+      timingsText: "காலை 7:30 – இரவு 11:30",
       statusOpen: "தற்போது திறந்துள்ளது",
       statusClosed: "தற்போது மூடப்பட்டுள்ளது",
-      opensAt: "காலை 10:30 மணிக்கு திறக்கும்",
+      opensAt: "காலை 7:30 மணிக்கு திறக்கும்",
       closesAt: "இரவு 11:30 மணிக்கு மூடப்படும்",
       disclaimer: "பயணத்திற்கு முன் நேரத்தை உறுதிப்படுத்திக் கொள்ளவும்.",
       sevenDays: "வாரத்தின் அனைத்து நாட்களும் திறந்திருக்கும்"

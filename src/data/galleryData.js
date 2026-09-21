@@ -21,7 +21,7 @@ export const galleryItems = [
     titleTa: "ஹோட்டல் ஆனந்தாஸ் முகப்பு தோற்றம் & ஜிஆர் ரெசிடென்சி",
     category: "restaurant",
     image: exteriorImg,
-    alt: "Hotel Anandhaas Pure Veg A/C restaurant building and wide car parking lot along the National Highway at Minnur",
+    alt: "Hotel Anandhaas Pure Veg A/C restaurant building and wide car parking lot along the National Highway at Chengilikuppam",
     featured: true
   },
   {
@@ -84,7 +84,7 @@ export const galleryItems = [
     titleTa: "விசாலமான கார் பார்க்கிங்",
     category: "parking",
     image: exteriorImg,
-    alt: "Spacious paved parking facility in front of Hotel Anandhaas Minnur for highway travelers and families",
+    alt: "Spacious paved parking facility in front of Hotel Anandhaas Chengilikuppam for highway travelers and families",
     featured: false
   }
 ];

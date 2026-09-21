@@ -62,7 +62,7 @@ export const FinalCTA = () => {
 
         {/* Address and Timings reminder */}
         <div className="mt-12 text-xs text-stone-400">
-          <p>📍 Near NH, Vaniyambadi, Chengilikuppam, Tamil Nadu 635807 • Open Daily: 10:30 AM – 11:30 PM</p>
+          <p>📍 Near NH, Vaniyambadi, Chengilikuppam, Tamil Nadu 635807 • Open Daily: 7:30 AM – 11:30 PM</p>
         </div>
 
       </div>

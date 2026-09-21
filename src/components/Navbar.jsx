@@ -60,7 +60,7 @@ export const Navbar = () => {
             </span>
             <span className="flex items-center gap-1.5 text-stone-300">
               <Clock className="w-3.5 h-3.5 text-[#C89D4B]" />
-              <span>10:30 AM – 11:30 PM</span>
+              <span>7:30 AM – 11:30 PM</span>
             </span>
           </div>
 
@@ -114,7 +114,7 @@ export const Navbar = () => {
                 <PureVegSymbol size="sm" className="hidden sm:inline-flex" />
               </div>
               <div className="flex items-center gap-2 text-[10px] sm:text-xs font-semibold tracking-widest text-[#78350F] uppercase">
-                <span>MINNUR</span>
+                <span>CHENGILIKUPPAM</span>
                 <span className="inline-block w-1 h-1 rounded-full bg-[#15803D]"></span>
                 <span className="text-emerald-800 font-bold">PURE VEGETARIAN</span>
               </div>

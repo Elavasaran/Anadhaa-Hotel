@@ -1,4 +1,4 @@
-﻿import mealsImg from '../assets/meals.png';
+import mealsImg from '../assets/meals.png';
 import dosaSpecialImg from '../assets/dosa_special.jpg';
 import roomMainImg from '../assets/room_main.webp';
 import bathroomImg from '../assets/bathroom_clean.webp';
@@ -52,7 +52,7 @@ export const facilitiesHighlights = [
     descriptionTa: "ஹோட்டல் ஆனந்தாஸுக்கு வரும் விருந்தினர்களுக்கு வசதியான வாகன நிறுத்துமிடம் உள்ளது.",
     ctaText: "Get Directions →",
     ctaTextTa: "வழித்தடம் பார்க்க →",
-    ctaLink: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Minnur+Vaniyambadi+Tamil+Nadu",
+    ctaLink: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Chengilikuppam+Vaniyambadi+Tamil+Nadu",
     isExternal: true,
     badge: "Spacious Parking",
     badgeTa: "பார்க்கிங் வசதி"
@@ -69,28 +69,12 @@ export const facilitiesHighlights = [
     descriptionTa: "பயணிகளுக்கு வசதியாக Jio-bp Pulse மின்னூர்தி சார்ஜிங் நிலையம் இங்கு உள்ளது.",
     ctaText: "View Location →",
     ctaTextTa: "இடத்தை பார்க்க →",
-    ctaLink: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Minnur+Vaniyambadi+Tamil+Nadu",
+    ctaLink: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Chengilikuppam+Vaniyambadi+Tamil+Nadu",
     isExternal: true,
     badge: "Jio-bp Pulse",
     badgeTa: "Jio-bp பல்ஸ்"
   },
-  {
-    id: "clean-modern-stay",
-    title: "Clean & Modern Stay",
-    titleTa: "தூய்மையான நவீன வசதிகள்",
-    category: "stay",
-    image: bathroomImg,
-    secondaryImage: roomMainImg,
-    icon: "Sparkles",
-    description: "Enjoy a clean and comfortable stay with modern room interiors.",
-    descriptionTa: "நவீன மற்றும் சுகாதாரமான அறைகளுடன் அமைதியான தங்கும் அனுபவம்.",
-    ctaText: "Explore Stay →",
-    ctaTextTa: "விவரம் பார்க்க →",
-    ctaLink: "#rooms-gallery",
-    isExternal: false,
-    badge: "Hygienic & Clean",
-    badgeTa: "தூய்மை & சுகாதாரம்"
-  },
+
   {
     id: "nh-location",
     title: "Convenient NH Location",
@@ -102,7 +86,7 @@ export const facilitiesHighlights = [
     descriptionTa: "வாணியம்பாடி, செங்கிலிக்குப்பம் தேசிய நெடுஞ்சாலை அருகில் அமைந்துள்ளதால் எளிதாக வந்தடையலாம்.",
     ctaText: "Get Directions →",
     ctaTextTa: "வழித்தடம் பார்க்க →",
-    ctaLink: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Minnur+Vaniyambadi+Tamil+Nadu",
+    ctaLink: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Chengilikuppam+Vaniyambadi+Tamil+Nadu",
     isExternal: true,
     badge: "Near NH Highway",
     badgeTa: "நெடுஞ்சாலை அருகில்"
@@ -126,22 +110,14 @@ export const roomsGalleryItems = [
     alt: "Spacious air conditioned double bed room with wooden paneling, TV, closet and desk at GR Residency",
     featured: true
   },
-  {
-    id: "room-2",
-    title: "Clean & Modern Bathroom with Shower & Marble Tiles",
-    titleTa: "தூய்மையான நவீன குளியலறை",
-    category: "bathroom",
-    image: bathroomImg,
-    alt: "Modern clean bathroom with black and beige marble tiles and shower fittings at GR Residency",
-    featured: true
-  },
+
   {
     id: "room-3",
     title: "Hotel Anandhaas Pure Veg & GR Residency Building",
     titleTa: "ஹோட்டல் ஆனந்தாஸ் & ஜிஆர் ரெசிடென்சி கட்டடம்",
     category: "interior",
     image: exteriorImg,
-    alt: "GR Residency and Hotel Anandhaas building facade along NH Highway at Minnur",
+    alt: "GR Residency and Hotel Anandhaas building facade along NH Highway at Chengilikuppam",
     featured: true
   },
   {
@@ -161,13 +137,13 @@ export const evChargingGallery = [
     title: "Jio-bp Pulse Fast EV Charging Station with Canopy",
     titleTa: "Jio-bp பல்ஸ் அதிவேக மின்சார வாகன சார்ஜிங் நிலையம்",
     image: evCharging2,
-    alt: "Jio-bp pulse EV fast charging station at Hotel Anandhaas Minnur with canopy"
+    alt: "Jio-bp pulse EV fast charging station at Hotel Anandhaas Chengilikuppam with canopy"
   },
   {
     id: "ev-2",
     title: "EV Vehicle Charging in Progress at Dedicated Bay",
     titleTa: "வாகனம் சார்ஜ் செய்யப்படும் பிரத்யேக இடம்",
     image: evCharging1,
-    alt: "Electric car connected to Jio-bp pulse DC fast charging point at Hotel Anandhaas Minnur"
+    alt: "Electric car connected to Jio-bp pulse DC fast charging point at Hotel Anandhaas Chengilikuppam"
   }
 ];

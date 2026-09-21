@@ -79,7 +79,7 @@ export const LocationSection = () => {
                       {language === 'ta' ? restaurantInfo.contact.address.fullTa : restaurantInfo.contact.address.full}
                     </p>
                     <p className="text-xs text-stone-500 mt-1">
-                      Landmark: Near National Highway, Minnur
+                      Landmark: Near National Highway, Chengilikuppam
                     </p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export const LocationSection = () => {
             {/* Google Maps Interactive Frame */}
             <div className="rounded-2xl overflow-hidden border border-stone-300 shadow-md bg-stone-100 relative h-72 sm:h-80">
               <iframe
-                title="Hotel Anandhaas Minnur Location Map"
+                title="Hotel Anandhaas Chengilikuppam Location Map"
                 src="https://maps.google.com/maps?q=12.6953,78.6019&hl=en&z=14&output=embed"
                 width="100%"
                 height="100%"

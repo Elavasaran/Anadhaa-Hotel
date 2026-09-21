@@ -42,7 +42,7 @@ export const VegIntro = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-stone-900 group">
                 <img
                   src={mealsImg}
-                  alt="Authentic South Indian Pure Vegetarian Meals served on banana leaf at Hotel Anandhaas Minnur"
+                  alt="Authentic South Indian Pure Vegetarian Meals served on banana leaf at Hotel Anandhaas Chengilikuppam"
                   className="w-full h-[360px] sm:h-[420px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />

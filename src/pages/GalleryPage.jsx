@@ -126,7 +126,7 @@ export const GalleryPage = () => {
         <div className="mt-16 p-8 rounded-2xl bg-[#F5EFE6] border border-[#C89D4B]/30 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-left">
             <h3 className="font-serif font-black text-xl text-[#2A1710] mb-1">
-              Visit Hotel Anandhaas Minnur in Person
+              Visit Hotel Anandhaas Chengilikuppam in Person
             </h3>
             <p className="text-xs sm:text-sm text-stone-600">
               Convenient highway access, warm hospitality, and pure vegetarian South Indian meals.

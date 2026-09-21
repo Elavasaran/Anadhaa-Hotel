@@ -82,7 +82,7 @@ export const FacilitiesPage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={exteriorImg}
-            alt="Hotel Anandhaas Minnur and GR Residency Building Facilities along NH"
+            alt="Hotel Anandhaas Chengilikuppam and GR Residency Building Facilities along NH"
             className="w-full h-full object-cover object-center brightness-100 contrast-[1.02]"
             loading="eager"
           />
@@ -215,7 +215,7 @@ export const FacilitiesPage = () => {
                     )
                   )}
 
-                  <span className="text-xs text-stone-400 font-medium">Hotel Anandhaas Minnur</span>
+                  <span className="text-xs text-stone-400 font-medium">Hotel Anandhaas Chengilikuppam</span>
                 </div>
               </div>
             </motion.div>
@@ -383,13 +383,13 @@ export const FacilitiesPage = () => {
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 bg-stone-900 group">
                 <img
                   src={evCharging2}
-                  alt="Jio-bp pulse EV fast charging station with canopy at Hotel Anandhaas Minnur"
+                  alt="Jio-bp pulse EV fast charging station with canopy at Hotel Anandhaas Chengilikuppam"
                   className="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
                 <div className="p-3.5 bg-[#2A1710] text-[#DFBE7A] text-xs font-semibold flex items-center justify-between">
                   <span>⚡ Jio-bp Pulse Charging Point</span>
-                  <span className="text-stone-300 font-normal">Hotel Anandhaas NH Minnur</span>
+                  <span className="text-stone-300 font-normal">Hotel Anandhaas NH Chengilikuppam</span>
                 </div>
               </div>
 

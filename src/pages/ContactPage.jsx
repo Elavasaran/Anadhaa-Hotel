@@ -100,7 +100,7 @@ export const ContactPage = () => {
                       {language === 'ta' ? restaurantInfo.contact.address.fullTa : restaurantInfo.contact.address.full}
                     </p>
                     <p className="text-xs text-stone-500 mt-1">
-                      Landmark: Located near the National Highway main stretch at Minnur, Vaniyambadi.
+                      Landmark: Located near the National Highway main stretch at Chengilikuppam, Vaniyambadi.
                     </p>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export const ContactPage = () => {
             {/* Google Map Embedded Frame */}
             <div className="rounded-3xl overflow-hidden border border-stone-300 shadow-md h-80 relative bg-stone-100">
               <iframe
-                title="Hotel Anandhaas Minnur Google Map"
+                title="Hotel Anandhaas Chengilikuppam Google Map"
                 src="https://maps.google.com/maps?q=12.6953,78.6019&hl=en&z=14&output=embed"
                 width="100%"
                 height="100%"
@@ -166,7 +166,7 @@ export const ContactPage = () => {
                 <span>Driving Directions & Stopover</span>
               </h3>
               <p className="text-xs text-stone-600 leading-relaxed mb-4 font-light">
-                If you are travelling along the highway near Vaniyambadi, look out for the Hotel Anandhaas Pure Vegetarian signboard at Minnur / Chengilikuppam. Direct entrance with dedicated parking right in front.
+                If you are travelling along the highway near Vaniyambadi, look out for the Hotel Anandhaas Pure Vegetarian signboard at Chengilikuppam / Chengilikuppam. Direct entrance with dedicated parking right in front.
               </p>
               <a
                 href={restaurantInfo.contact.googleMapsDirections}

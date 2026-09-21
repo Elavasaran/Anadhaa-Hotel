@@ -44,7 +44,7 @@ export const Footer = () => {
                   HOTEL ANANDHAAS
                 </span>
                 <span className="text-xs font-bold tracking-widest text-[#DFBE7A] uppercase block">
-                  MINNUR • PURE VEGETARIAN
+                  CHENGILIKUPPAM • PURE VEGETARIAN
                 </span>
               </div>
             </div>
@@ -105,7 +105,7 @@ export const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-[#DFBE7A] shrink-0" />
-                <span>Daily: 10:30 AM – 11:30 PM</span>
+                <span>Daily: 7:30 AM – 11:30 PM</span>
               </div>
 
               <div className="pt-2">
@@ -127,7 +127,7 @@ export const Footer = () => {
         {/* Bottom Bar: Copyright & Compliance */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 text-center sm:text-left">
           <p>
-            © 2026 Hotel Anandhaas Minnur. {t.footer.rightsReserved}
+            © 2026 Hotel Anandhaas Chengilikuppam. {t.footer.rightsReserved}
           </p>
 
           <p className="text-stone-400">

@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { Clock, CheckCircle, AlertCircle, Calendar, Phone, Sparkles } from 'lucide-react';
@@ -19,7 +19,7 @@ export const OpeningHours = () => {
       const minutes = istTime.getMinutes();
       const totalMinutes = hours * 60 + minutes;
 
-      const openMinutes = restaurantInfo.timings.openHour * 60 + restaurantInfo.timings.openMinute; // 10:30 AM -> 630
+      const openMinutes = restaurantInfo.timings.openHour * 60 + restaurantInfo.timings.openMinute; // 7:30 AM -> 630
       const closeMinutes = restaurantInfo.timings.closeHour * 60 + restaurantInfo.timings.closeMinute; // 11:30 PM -> 1410
 
       setIsOpen(totalMinutes >= openMinutes && totalMinutes < closeMinutes);
@@ -38,13 +38,13 @@ export const OpeningHours = () => {
   }, []);
 
   const daysOfWeek = [
-    { en: "Monday", ta: "திங்கள்", hours: "10:30 AM – 11:30 PM" },
-    { en: "Tuesday", ta: "செவ்வாய்", hours: "10:30 AM – 11:30 PM" },
-    { en: "Wednesday", ta: "புதன்", hours: "10:30 AM – 11:30 PM" },
-    { en: "Thursday", ta: "வியாழன்", hours: "10:30 AM – 11:30 PM" },
-    { en: "Friday", ta: "வெள்ளி", hours: "10:30 AM – 11:30 PM" },
-    { en: "Saturday", ta: "சனி", hours: "10:30 AM – 11:30 PM" },
-    { en: "Sunday", ta: "ஞாயிறு", hours: "10:30 AM – 11:30 PM" },
+    { en: "Monday", ta: "திங்கள்", hours: "7:30 AM – 11:30 PM" },
+    { en: "Tuesday", ta: "செவ்வாய்", hours: "7:30 AM – 11:30 PM" },
+    { en: "Wednesday", ta: "புதன்", hours: "7:30 AM – 11:30 PM" },
+    { en: "Thursday", ta: "வியாழன்", hours: "7:30 AM – 11:30 PM" },
+    { en: "Friday", ta: "வெள்ளி", hours: "7:30 AM – 11:30 PM" },
+    { en: "Saturday", ta: "சனி", hours: "7:30 AM – 11:30 PM" },
+    { en: "Sunday", ta: "ஞாயிறு", hours: "7:30 AM – 11:30 PM" },
   ];
 
   return (
@@ -108,16 +108,20 @@ export const OpeningHours = () => {
         ))}
       </div>
 
-      {/* Note & Direct Call */}
-      <div className="p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-start gap-2">
-        <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-        <div>
-          <p className="font-medium">{language === 'ta' ? restaurantInfo.timings.noteTa : restaurantInfo.timings.note}</p>
-          <a href={restaurantInfo.contact.telLink} className="font-bold underline text-amber-950 mt-0.5 inline-block">
-            Call 093616 66099 to confirm today's schedule
-          </a>
+      {/* Interactive Call to Action */}
+      <a 
+        href={restaurantInfo.contact.telLink} 
+        className="mt-6 flex items-center justify-center gap-4 p-4 rounded-xl bg-gradient-to-br from-[#2A1710] to-[#3D2318] hover:from-[#3D2318] hover:to-[#5C3D2E] text-white shadow-lg shadow-black/10 hover:shadow-xl hover:-translate-y-1 transition-all group relative overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-white/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
+        <div className="p-2.5 bg-[#DFBE7A]/20 bg-opacity-30 rounded-full group-hover:scale-110 group-hover:bg-[#DFBE7A]/30 transition-all shadow-inner relative z-10">
+          <Phone className="w-5 h-5 text-[#DFBE7A]" />
         </div>
-      </div>
+        <div className="text-left relative z-10">
+          <p className="font-bold text-sm tracking-wide text-[#FDFBF7]">Confirm Today's Schedule</p>
+          <p className="font-mono font-medium text-[#DFBE7A] text-xs">Call {restaurantInfo.contact.phone}</p>
+        </div>
+      </a>
     </div>
   );
 };

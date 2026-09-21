@@ -1,9 +1,9 @@
 ﻿export const restaurantInfo = {
-  name: "Hotel Anandhaas Minnur",
+  name: "Hotel Anandhaas Chengilikuppam",
   nameTa: "ஹோட்டல் ஆனந்தாஸ் மின்னூர்",
   tagline: "Pure Vegetarian • Taste • Quality • Hospitality",
   taglineTa: "தூய சைவ உணவகம் • சுவை • தரம் • உபசரிப்பு",
-  shortDesc: "Authentic South Indian vegetarian dining destination located conveniently on the NH highway at Minnur / Vaniyambadi.",
+  shortDesc: "Authentic South Indian vegetarian dining destination located conveniently on the NH highway at Chengilikuppam / Vaniyambadi.",
   shortDescTa: "மின்னூர் / வாணியம்பாடி தேசிய நெடுஞ்சாலையில் அமைந்துள்ள பாரம்பரிய சுவைமிக்க தூய தென்னிந்திய சைவ உணவகம்.",
   pureVegNotice: "100% PURE VEGETARIAN",
   pureVegNoticeTa: "100% தூய சைவ உணவகம்",
@@ -15,16 +15,16 @@
     whatsappLink: "https://wa.me/919361666099?text=Namaste%20Hotel%20Anandhaas,%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant",
     email: "info@hotelanandhaasminnur.com",
     address: {
-      line1: "Hotel Anandhaas Minnur",
+      line1: "Hotel Anandhaas Chengilikuppam",
       line2: "Near NH Main Road, Chengilikuppam",
       city: "Vaniyambadi",
       state: "Tamil Nadu",
       pincode: "635807",
-      full: "Hotel Anandhaas Minnur, Near NH, Vaniyambadi, Chengilikuppam, Tamil Nadu 635807",
+      full: "Hotel Anandhaas Chengilikuppam, Near NH, Vaniyambadi, Chengilikuppam, Tamil Nadu 635807",
       fullTa: "ஹோட்டல் ஆனந்தாஸ் மின்னூர், தேசிய நெடுஞ்சாலை அருகில், செங்கிலிக்குப்பம், வாணியம்பாடி, தமிழ்நாடு 635807"
     },
-    googleMapsLink: "https://www.google.com/maps/search/?api=1&query=Hotel+Anandhaas+Minnur+Chengilikuppam+Vaniyambadi",
-    googleMapsDirections: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Minnur+Vaniyambadi+Tamil+Nadu",
+    googleMapsLink: "https://www.google.com/maps/search/?api=1&query=Hotel+Anandhaas+Chengilikuppam+Chengilikuppam+Vaniyambadi",
+    googleMapsDirections: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Chengilikuppam+Vaniyambadi+Tamil+Nadu",
     coordinates: {
       lat: 12.6953,
       lng: 78.6019
@@ -32,12 +32,12 @@
   },
 
   timings: {
-    openHour: 10,
+    openHour: 7,
     openMinute: 30,
     closeHour: 23,
     closeMinute: 30,
-    displayTime: "10:30 AM – 11:30 PM",
-    displayTimeTa: "காலை 10:30 – இரவு 11:30",
+    displayTime: "7:30 AM – 11:30 PM",
+    displayTimeTa: "காலை 7:30 – இரவு 11:30",
     days: "Open All 7 Days",
     daysTa: "வாரத்தின் அனைத்து நாட்களும் திறந்திருக்கும்",
     note: "Please confirm current timings before final travel.",
@@ -74,7 +74,7 @@
       icon: "Navigation",
       title: "Near NH Main Road",
       titleTa: "நெடுஞ்சாலை அருகில்",
-      desc: "Direct access along the National Highway near Minnur / Vaniyambadi for travellers.",
+      desc: "Direct access along the National Highway near Chengilikuppam / Vaniyambadi for travellers.",
       descTa: "மின்னூர் / வாணியம்பாடி நெடுஞ்சாலையில் எளிதாக வந்து செல்லும் வசதி."
     },
     {
