@@ -1,4 +1,4 @@
-﻿export const restaurantInfo = {
+export const restaurantInfo = {
   name: "Hotel Anandhaas Minnur",
   nameTa: "ஹோட்டல் ஆனந்தாஸ் மின்னூர்",
   tagline: "Pure Vegetarian • Taste • Quality • Hospitality",
@@ -9,19 +9,19 @@
   pureVegNoticeTa: "100% தூய சைவ உணவகம்",
   
   contact: {
-    phone: "093616 66099",
+    phone: "93616 66099",
     displayPhone: "+91 93616 66099",
-    telLink: "tel:09361666099",
+    telLink: "tel:+919361666099",
     whatsappLink: "https://wa.me/919361666099?text=Namaste%20Hotel%20Anandhaas,%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant",
     email: "info@hotelanandhaasminnur.com",
     address: {
-      line1: "Hotel Anandhaas Minnur",
-      line2: "Near NH Main Road, Chengilikuppam",
-      city: "Vaniyambadi",
+      line1: "Chennai - Bangalore Highway (TANSI)",
+      line2: "Chengilikuppam, Ambur Taluk",
+      city: "Tirupattur District",
       state: "Tamil Nadu",
-      pincode: "635807",
-      full: "Hotel Anandhaas Minnur, Near NH, Vaniyambadi, Chengilikuppam, Tamil Nadu 635807",
-      fullTa: "ஹோட்டல் ஆனந்தாஸ் மின்னூர், தேசிய நெடுஞ்சாலை அருகில், செங்கிலிக்குப்பம், வாணியம்பாடி, தமிழ்நாடு 635807"
+      pincode: "635 751",
+      full: "Chennai - Bangalore Highway (TANSI), Chengilikuppam - 635 751, Ambur Taluk, Tirupattur District, Tamil Nadu.",
+      fullTa: "சென்னை - பெங்களூர் நெடுஞ்சாலை (TANSI), செங்கிலிக்குப்பம் - 635 751, ஆம்பூர் தாலுகா, திருப்பத்தூர் மாவட்டம், தமிழ்நாடு."
     },
     googleMapsLink: "https://www.google.com/maps/search/?api=1&query=Hotel+Anandhaas+Minnur+Chengilikuppam+Vaniyambadi",
     googleMapsDirections: "https://www.google.com/maps/dir/?api=1&destination=Hotel+Anandhaas+Minnur+Vaniyambadi+Tamil+Nadu",

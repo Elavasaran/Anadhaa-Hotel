@@ -1,4 +1,4 @@
-﻿export const translations = {
+export const translations = {
   en: {
     nav: {
       home: "Home",
@@ -165,14 +165,14 @@
       phoneTitle: "Phone Contact",
       hoursTitle: "Dining Hours",
       getDirectionsBtn: "Get Directions on Google Maps",
-      callUsBtn: "Call: 093616 66099",
+      callUsBtn: "Call: 93616 66099",
       mapHint: "Click 'Get Directions' to open turn-by-turn navigation on your mobile or GPS device."
     },
     finalCta: {
       heading: "Planning a Visit?",
       subheading: "Enjoy Pure Vegetarian food, comfortable accommodation and convenient traveller facilities at Hotel Anandhaas Minnur.",
       viewMenu: "View Menu",
-      callNow: "Call: 093616 66099",
+      callNow: "Call: 93616 66099",
       getDirections: "Get Directions"
     },
     footer: {
@@ -357,14 +357,14 @@
       phoneTitle: "தொடர்பு எண்",
       hoursTitle: "பணி நேரம்",
       getDirectionsBtn: "கூகிள் மேப்ஸில் வழித்தடம்",
-      callUsBtn: "அழைக்க: 093616 66099",
+      callUsBtn: "அழைக்க: 93616 66099",
       mapHint: "வழித்தடம் பொத்தானை அழுத்தி ஜிபிஎஸ் மூலம் எளிதாக வந்து சேருங்கள்."
     },
     finalCta: {
       heading: "வருகை தர திட்டமா?",
       subheading: "தூய சைவ உணவு, வசதியான தங்குமிடம் மற்றும் பயனுள்ள நெடுஞ்சாலை வசதிகளை அனுபவிக்க ஹோட்டல் ஆனந்தாஸ் மின்னூருக்கு வருகை தாருங்கள்.",
       viewMenu: "உணவு பட்டியல்",
-      callNow: "அழைக்க: 093616 66099",
+      callNow: "அழைக்க: 93616 66099",
       getDirections: "வழித்தடம் பெற"
     },
     footer: {

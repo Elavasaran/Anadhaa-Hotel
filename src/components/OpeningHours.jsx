@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { Clock, CheckCircle, AlertCircle, Calendar, Phone, Sparkles } from 'lucide-react';
@@ -114,7 +114,7 @@ export const OpeningHours = () => {
         <div>
           <p className="font-medium">{language === 'ta' ? restaurantInfo.timings.noteTa : restaurantInfo.timings.note}</p>
           <a href={restaurantInfo.contact.telLink} className="font-bold underline text-amber-950 mt-0.5 inline-block">
-            Call 093616 66099 to confirm today's schedule
+            Call {restaurantInfo.contact.phone} to confirm today's schedule
           </a>
         </div>
       </div>
