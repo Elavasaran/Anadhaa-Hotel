@@ -1,6 +1,11 @@
-﻿import mealsImg from '../assets/meals.png';
+import mealsImg from '../assets/meals.png';
 import dosaSpecialImg from '../assets/dosa_special.jpg';
 import roomMainImg from '../assets/room_main.webp';
+import roomKingDeluxe from '../assets/room_king_deluxe.webp';
+import roomFamily4Bed from '../assets/room_family_4bed.webp';
+import roomMultiBed from '../assets/room_multi_bed.webp';
+import roomTwinBed from '../assets/room_twin_bed.webp';
+import receptionWood from '../assets/reception_wood.webp';
 import bathroomImg from '../assets/bathroom_clean.webp';
 import evCharging1 from '../assets/ev_charging_1.jpg';
 import evCharging2 from '../assets/ev_charging_2.jpg';
@@ -30,7 +35,7 @@ export const facilitiesHighlights = [
     title: "Comfortable Rooms",
     titleTa: "வசதியான தங்கும் அறைகள்",
     category: "stay",
-    image: roomMainImg,
+    image: roomKingDeluxe,
     icon: "BedDouble",
     description: "Comfortable accommodation is available for guests and travellers looking for a convenient stay.",
     descriptionTa: "பயணிகளுக்கும் விருந்தினர்களுக்கும் சௌகரியமான தங்கும் அறை வசதிகள் உள்ளன.",
@@ -112,46 +117,82 @@ export const facilitiesHighlights = [
 export const roomsGalleryCategories = [
   { id: "all", name: "All Stay Photos", nameTa: "அனைத்தும்" },
   { id: "rooms", name: "Rooms & Beds", nameTa: "அறைகள்" },
-  { id: "bathroom", name: "Bathroom", nameTa: "குளியலறை" },
-  { id: "interior", name: "Corridor & Entrance", nameTa: "உணவக முகப்பு" }
+  { id: "reception", name: "Reception & Lobby", nameTa: "வரவேற்பு அறை" },
+  { id: "bathroom", name: "Bathroom", nameTa: "குளியலறை" }
 ];
 
 export const roomsGalleryItems = [
   {
-    id: "room-1",
-    title: "Comfortable Double Bed AC Room with Modern Wood Decor",
-    titleTa: "ஏசி வசதியுடன் கூடிய நவீன படுக்கை அறை",
+    id: "room-king",
+    title: "Deluxe King AC Bedroom with Wooden Headboard & Lamps",
+    titleTa: "டீலக்ஸ் கிங் ஏசி படுக்கை அறை",
+    category: "rooms",
+    image: roomKingDeluxe,
+    alt: "Deluxe air conditioned king double bed room with wooden paneling, bedside tables and swan towel decor at GR Residency",
+    featured: true
+  },
+  {
+    id: "room-family-4",
+    title: "Family Quad Suite with 4 AC Beds & Ambient Lighting",
+    titleTa: "குடும்பத்திற்கான 4 படுக்கை வசதி கொண்ட ஏசி அறை",
+    category: "rooms",
+    image: roomFamily4Bed,
+    alt: "Spacious family quad room with four comfortable beds, dual ceiling fans, AC and tea kettle at GR Residency",
+    featured: true
+  },
+  {
+    id: "room-twin",
+    title: "Spacious Twin Bed AC Room with Modern Wood Decor",
+    titleTa: "இரட்டை படுக்கை கொண்ட விசாலமான ஏசி அறை",
+    category: "rooms",
+    image: roomTwinBed,
+    alt: "Twin double bed room with wooden headboard, AC and seating area at GR Residency Minnur",
+    featured: true
+  },
+  {
+    id: "room-multi",
+    title: "Multi-Bed Group Room with TV Unit & Wardrobe",
+    titleTa: "டிவி மற்றும் அலமாரி வசதியுடன் கூடிய அறை",
+    category: "rooms",
+    image: roomMultiBed,
+    alt: "Multi bed room showing wall-mounted TV console, air conditioner, wardrobe and seating at GR Residency",
+    featured: true
+  },
+  {
+    id: "room-desk",
+    title: "Double Room with TV Unit, Wardrobe & Coffee Table",
+    titleTa: "டிவி மற்றும் அமரும் வசதி கொண்ட இரட்டை படுக்கை அறை",
     category: "rooms",
     image: roomMainImg,
-    alt: "Spacious air conditioned double bed room with wooden paneling, TV, closet and desk at GR Residency",
+    alt: "Air conditioned double bed room with TV console, wooden wardrobe, desk and seating at GR Residency",
+    featured: false
+  },
+  {
+    id: "reception-desk",
+    title: "GR Residency Wooden Reception Counter & Hallway",
+    titleTa: "மர வேலைப்பாடுகளுடன் கூடிய வரவேற்பு மற்றும் நடைபாதை",
+    category: "reception",
+    image: receptionWood,
+    alt: "Polished wooden reception desk and lighted hallway corridor at GR Residency Hotel Anandhaas",
     featured: true
   },
   {
-    id: "room-2",
-    title: "Clean & Modern Bathroom with Shower & Marble Tiles",
-    titleTa: "தூய்மையான நவீன குளியலறை",
+    id: "bathroom-modern",
+    title: "Clean & Modern Bathroom with Black & Cream Marble Tiles",
+    titleTa: "கருப்பு மற்றும் கிரீம் பளிங்கு டைல்ஸ் கொண்ட நவீன குளியலறை",
     category: "bathroom",
     image: bathroomImg,
-    alt: "Modern clean bathroom with black and beige marble tiles and shower fittings at GR Residency",
+    alt: "Modern clean bathroom with black and beige marble wall tiles, shower fittings and sanitary ware at GR Residency",
     featured: true
   },
   {
-    id: "room-3",
-    title: "Hotel Anandhaas Pure Veg & GR Residency Building",
-    titleTa: "ஹோட்டல் ஆனந்தாஸ் & ஜிஆர் ரெசிடென்சி கட்டடம்",
-    category: "interior",
-    image: exteriorImg,
-    alt: "GR Residency and Hotel Anandhaas building facade along NH Highway at Minnur",
-    featured: true
-  },
-  {
-    id: "room-4",
-    title: "Welcoming Glass Entrance Corridor & Greenery",
-    titleTa: "ஆனந்தாஸ் முகப்பு நடைபாதை மற்றும் வரவேற்புக்கூடம்",
-    category: "interior",
+    id: "entrance-lobby",
+    title: "Hotel Anandhaas Pure Veg A/C Grand Glass Corridor",
+    titleTa: "ஆனந்தாஸ் தூய சைவ உணவக முகப்பு நுழைவுக்கூடம்",
+    category: "reception",
     image: entranceImg,
-    alt: "Hotel Anandhaas Pure Veg A/C grand glass entrance corridor with warm ambient lighting and plants",
-    featured: true
+    alt: "Hotel Anandhaas Pure Veg A/C grand glass entrance corridor with warm lighting and plants",
+    featured: false
   }
 ];
 
