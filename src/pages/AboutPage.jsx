@@ -34,11 +34,11 @@ export const AboutPage = () => {
             <span>{t.about.badge}</span>
           </div>
 
-          <h1 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight text-white mb-4">
+          <h1 className="font-serif font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-white mb-4 leading-[1.18]">
             {t.about.heading}
           </h1>
 
-          <p className="text-stone-300 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-stone-100 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto">
             {t.about.subheading}
           </p>
         </div>
@@ -59,7 +59,7 @@ export const AboutPage = () => {
               />
               <div className="p-3 bg-[#2A1710] text-[#DFBE7A] text-xs font-semibold flex items-center justify-between">
                 <span>📍 Restaurant Building & NH Parking</span>
-                <span className="text-stone-300 font-normal text-[11px]">Vaniyambadi</span>
+                <span className="text-stone-300 font-normal text-xs">Vaniyambadi</span>
               </div>
             </div>
             
@@ -72,39 +72,39 @@ export const AboutPage = () => {
               />
               <div className="p-3 bg-[#2A1710] text-[#DFBE7A] text-xs font-semibold flex items-center justify-between">
                 <span>🌿 Anandhaas Pure Veg A/C Entrance</span>
-                <span className="text-emerald-400 font-bold text-[11px]">Taste • Quality • Hospitality</span>
+                <span className="text-emerald-400 font-bold text-xs">Taste • Quality • Hospitality</span>
               </div>
             </div>
           </div>
 
           {/* Narrative Content (7 cols) */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3D2318]/10 text-[#78350F] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#3D2318]/10 text-[#78350F] text-xs font-bold tracking-widest uppercase">
               <MapPin className="w-3.5 h-3.5 text-[#C89D4B]" />
               <span>Chengilikuppam / Vaniyambadi, Tamil Nadu</span>
             </div>
 
-            <h2 className="font-serif font-black text-2xl sm:text-3xl md:text-4xl text-[#2A1710] tracking-tight leading-snug">
+            <h2 className="font-serif font-bold text-2xl sm:text-3xl lg:text-4xl text-[#2A1710] tracking-tight leading-[1.2]">
               Authentic Vegetarian Traditions for Highway Travellers & Families
             </h2>
 
-            <p className="text-stone-700 text-base sm:text-lg font-light leading-relaxed">
+            <p className="text-stone-800 text-base sm:text-lg font-normal leading-relaxed">
               {t.about.storyP1}
             </p>
 
-            <p className="text-stone-700 text-base font-light leading-relaxed">
+            <p className="text-stone-800 text-base sm:text-lg font-normal leading-relaxed">
               {t.about.storyP2}
             </p>
 
             <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-                <p className="font-serif font-bold text-[#2A1710] text-sm mb-1">📍 Prime Highway Location</p>
-                <p className="text-xs text-stone-600">Situated directly near the NH main road in Chengilikuppam, Vaniyambadi.</p>
+                <p className="font-serif font-bold text-[#2A1710] text-sm sm:text-base mb-1">📍 Prime Highway Location</p>
+                <p className="text-xs sm:text-sm text-stone-700 leading-normal">Situated directly near the NH main road in Chengilikuppam, Vaniyambadi.</p>
               </div>
 
               <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-                <p className="font-serif font-bold text-[#2A1710] text-sm mb-1">🌿 100% Pure Vegetarian</p>
-                <p className="text-xs text-stone-600">Strict vegetarian culinary standards with uncompromised quality.</p>
+                <p className="font-serif font-bold text-[#2A1710] text-sm sm:text-base mb-1">🌿 100% Pure Vegetarian</p>
+                <p className="text-xs sm:text-sm text-stone-700 leading-normal">Strict vegetarian culinary standards with uncompromised quality.</p>
               </div>
             </div>
           </div>
@@ -117,14 +117,14 @@ export const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2A1710] text-[#DFBE7A] text-xs font-bold tracking-widest uppercase mb-3">
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#2A1710] text-[#DFBE7A] text-xs font-bold tracking-widest uppercase mb-3">
               <Sparkles className="w-3.5 h-3.5 text-[#DFBE7A]" />
               <span>{t.about.valuesHeading}</span>
             </div>
-            <h2 className="font-serif font-black text-3xl sm:text-4xl text-[#2A1710] tracking-tight mb-3">
+            <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-3">
               The Anandhaas Commitment
             </h2>
-            <p className="text-stone-600 text-base font-light">
+            <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
               {t.about.valuesSub}
             </p>
           </div>
@@ -141,7 +141,7 @@ export const AboutPage = () => {
                 <h3 className="font-serif font-bold text-xl text-[#2A1710] mb-2">
                   {language === 'ta' ? val.titleTa : val.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-light">
+                <p className="text-sm text-stone-700 leading-relaxed font-normal">
                   {val.desc}
                 </p>
               </div>

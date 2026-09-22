@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { Star, MessageSquareQuote, ExternalLink, CheckCircle2, ShieldCheck } from 'lucide-react';
@@ -17,11 +17,11 @@ export const ReviewsPage = () => {
             <span>{t.reviews.badge}</span>
           </div>
 
-          <h1 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h1 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.reviews.heading}
           </h1>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.reviews.subheading}
           </p>
 
@@ -33,7 +33,7 @@ export const ReviewsPage = () => {
                   <span className="font-serif font-black text-4xl sm:text-5xl text-[#2A1710]">
                     {restaurantInfo.ratings.score}
                   </span>
-                  <span className="text-stone-400 text-xl font-serif">/ 5</span>
+                  <span className="text-stone-500 text-xl font-serif">/ 5</span>
                 </div>
                 <div className="flex items-center text-amber-500 my-2">
                   {[...Array(3)].map((_, i) => (
@@ -42,7 +42,7 @@ export const ReviewsPage = () => {
                   <Star className="w-6 h-6 fill-amber-400/50 text-amber-500" />
                   <Star className="w-6 h-6 text-stone-300" />
                 </div>
-                <p className="text-xs text-stone-500 font-medium">
+                <p className="text-xs sm:text-sm text-stone-600 font-semibold">
                   {t.reviews.basedOnText}
                 </p>
               </div>
@@ -50,18 +50,18 @@ export const ReviewsPage = () => {
               <div className="h-16 w-px bg-stone-200 hidden sm:block"></div>
 
               <div className="text-center sm:text-left space-y-2">
-                <div className="flex items-center gap-2 text-xs font-bold text-emerald-800">
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-emerald-800">
                   <ShieldCheck className="w-4 h-4 text-emerald-700" />
                   <span>Verified Google Business Listing</span>
                 </div>
-                <p className="text-xs text-stone-600">
+                <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-normal">
                   Customer feedback submitted by guests visiting Hotel Anandhaas Chengilikuppam.
                 </p>
                 <a
                   href={restaurantInfo.contact.googleMapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#78350F] hover:underline pt-1"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#78350F] hover:underline pt-1"
                 >
                   <span>{t.reviews.readMoreGoogle}</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -89,12 +89,12 @@ export const ReviewsPage = () => {
                     ))}
                   </div>
 
-                  <span className="text-xs font-semibold text-stone-400">
+                  <span className="text-xs font-semibold text-stone-500">
                     Google Review
                   </span>
                 </div>
 
-                <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                <p className="text-stone-800 text-sm sm:text-base leading-relaxed mb-6 font-normal">
                   "{language === 'ta' && rev.tamilText ? rev.tamilText : rev.text}"
                 </p>
               </div>
@@ -104,7 +104,7 @@ export const ReviewsPage = () => {
                   <h3 className="font-serif font-bold text-base text-[#2A1710]">
                     {rev.name}
                   </h3>
-                  <p className="text-xs text-stone-400">
+                  <p className="text-xs text-stone-500 font-medium">
                     {rev.date}
                   </p>
                 </div>

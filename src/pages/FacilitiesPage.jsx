@@ -105,25 +105,25 @@ export const FacilitiesPage = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.15] mb-4 drop-shadow-md">
+            <h1 className="font-serif font-bold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.18] mb-4 drop-shadow-md">
               {t.facilitiesPage.heading}
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg md:text-xl text-stone-200 font-light leading-relaxed mb-6 drop-shadow">
+            <p className="text-base sm:text-lg md:text-xl text-stone-100 font-normal leading-relaxed mb-6 drop-shadow">
               {t.facilitiesPage.subtitle}
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs text-stone-300">
-              <span className="flex items-center gap-1.5 font-medium text-[#DFBE7A]">
+            <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-stone-200">
+              <span className="flex items-center gap-1.5 font-semibold text-[#DFBE7A]">
                 <PureVegSymbol size="sm" /> Pure Veg Dining
               </span>
               <span>•</span>
-              <span className="flex items-center gap-1.5 font-medium text-stone-200">
+              <span className="flex items-center gap-1.5 font-semibold text-stone-200">
                 <BedDouble className="w-3.5 h-3.5 text-[#DFBE7A]" /> GR Residency Rooms
               </span>
               <span>•</span>
-              <span className="flex items-center gap-1.5 font-medium text-amber-300">
+              <span className="flex items-center gap-1.5 font-semibold text-amber-300">
                 <Zap className="w-3.5 h-3.5 text-amber-400" /> Jio-bp Pulse EV Charging
               </span>
             </div>
@@ -134,14 +134,14 @@ export const FacilitiesPage = () => {
       {/* 2. 6 KEY FACILITIES GRID (Desktop 2-col, Mobile 1-col) */}
       <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#3D2318]/10 text-[#78350F] text-xs font-bold tracking-widest uppercase mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#3D2318]/10 text-[#78350F] text-xs font-bold tracking-widest uppercase mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#C89D4B]" />
             <span>{t.facilitiesPage.highlightsHeading}</span>
           </div>
-          <h2 className="font-serif font-black text-3xl sm:text-4xl text-[#2A1710] tracking-tight mb-3">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-3">
             Integrated Comfort & Traveller Convenience
           </h2>
-          <p className="text-stone-600 text-base font-light">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.facilitiesPage.highlightsSub}
           </p>
         </div>
@@ -175,10 +175,10 @@ export const FacilitiesPage = () => {
               {/* Content Details */}
               <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-serif font-black text-2xl text-[#2A1710] mb-2 group-hover:text-[#78350F] transition-colors">
+                  <h3 className="font-serif font-bold text-2xl text-[#2A1710] mb-2.5 group-hover:text-[#78350F] transition-colors">
                     {language === 'ta' ? fac.titleTa : fac.title}
                   </h3>
-                  <p className="text-stone-600 text-sm sm:text-base font-light leading-relaxed mb-6">
+                  <p className="text-stone-700 text-sm sm:text-base font-normal leading-relaxed mb-6">
                     {language === 'ta' ? fac.descriptionTa : fac.description}
                   </p>
                 </div>
@@ -330,11 +330,11 @@ export const FacilitiesPage = () => {
                 <span>{t.facilitiesPage.evSectionBadge}</span>
               </div>
 
-              <h2 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+              <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-[1.2]">
                 {t.facilitiesPage.evSectionTitle}
               </h2>
 
-              <p className="text-stone-300 text-base sm:text-lg font-light leading-relaxed">
+              <p className="text-stone-200 text-base sm:text-lg font-normal leading-relaxed">
                 {t.facilitiesPage.evSectionDesc}
               </p>
 

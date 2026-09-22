@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { PureVegSymbol } from './PureVegBadge';
 import { Utensils, Navigation, Car, Sparkles } from 'lucide-react';
@@ -50,10 +50,10 @@ export const InfoStrip = () => {
                 {card.badge}
               </div>
               <div className="min-w-0">
-                <h3 className="font-serif font-bold text-sm sm:text-base text-[#2A1710] tracking-tight truncate">
+                <h3 className="font-serif font-bold text-sm sm:text-base text-[#2A1710] tracking-tight">
                   {card.title}
                 </h3>
-                <p className="text-xs text-stone-600 font-medium">
+                <p className="text-xs sm:text-sm text-stone-700 font-medium leading-normal">
                   {card.desc}
                 </p>
               </div>

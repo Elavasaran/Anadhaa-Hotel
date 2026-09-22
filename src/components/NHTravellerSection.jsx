@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { Compass, Car, Utensils, Users, Navigation, MapPin, ShieldCheck } from 'lucide-react';
@@ -44,12 +44,12 @@ export const NHTravellerSection = () => {
         </div>
 
         {/* Section Heading */}
-        <h2 className="font-serif font-black text-2xl sm:text-3xl md:text-4xl text-[#2A1710] tracking-tight mb-4">
+        <h2 className="font-serif font-bold text-2xl sm:text-3xl lg:text-4xl text-[#2A1710] tracking-tight mb-4">
           {t.nhSection.heading}
         </h2>
 
         {/* Description */}
-        <p className="text-stone-700 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed mb-12">
+        <p className="text-stone-800 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed mb-12">
           {t.nhSection.description}
         </p>
 
@@ -66,14 +66,14 @@ export const NHTravellerSection = () => {
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 border ${card.color}`}>
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-serif font-bold text-lg text-[#2A1710] mb-2">
+                  <h3 className="font-serif font-bold text-lg sm:text-xl text-[#2A1710] mb-2">
                     {card.title}
                   </h3>
-                  <p className="text-sm text-stone-600 font-normal leading-relaxed">
+                  <p className="text-sm sm:text-base text-stone-700 font-normal leading-relaxed">
                     {card.desc}
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-stone-100 flex items-center gap-1 text-xs text-emerald-800 font-semibold">
+                <div className="mt-4 pt-3 border-t border-stone-100 flex items-center gap-1 text-xs sm:text-sm text-emerald-800 font-semibold">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
                   <span>Highway Traveller Verified</span>
                 </div>

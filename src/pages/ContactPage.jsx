@@ -29,11 +29,11 @@ export const ContactPage = () => {
             <span>Pure Vegetarian Restaurant</span>
           </div>
 
-          <h1 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h1 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.location.heading}
           </h1>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.location.subheading}
           </p>
         </div>
@@ -47,10 +47,10 @@ export const ContactPage = () => {
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-md space-y-6">
               
               <div>
-                <h2 className="font-serif font-black text-2xl text-[#2A1710] mb-1">
+                <h2 className="font-serif font-bold text-2xl sm:text-3xl text-[#2A1710] mb-1">
                   {language === 'ta' ? restaurantInfo.nameTa : restaurantInfo.name}
                 </h2>
-                <p className="text-xs text-stone-500 font-medium">
+                <p className="text-xs sm:text-sm text-stone-600 font-semibold">
                   {restaurantInfo.tagline}
                 </p>
               </div>
@@ -59,7 +59,7 @@ export const ContactPage = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <a
                   href={restaurantInfo.contact.telLink}
-                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#2A1710] text-[#DFBE7A] font-semibold text-xs sm:text-sm hover:bg-[#3D2318] shadow-xs transition-all"
+                  className="flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-[#2A1710] text-[#DFBE7A] font-bold text-xs sm:text-sm hover:bg-[#3D2318] hover:text-white shadow-xs transition-all"
                 >
                   <Phone className="w-4 h-4 text-[#DFBE7A]" />
                   <span>Call {restaurantInfo.contact.phone}</span>
@@ -69,7 +69,7 @@ export const ContactPage = () => {
                   href={restaurantInfo.contact.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-800 text-white font-semibold text-xs sm:text-sm hover:bg-emerald-900 shadow-xs transition-all"
+                  className="flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-emerald-800 text-white font-bold text-xs sm:text-sm hover:bg-emerald-900 shadow-xs transition-all"
                 >
                   <MessageCircle className="w-4 h-4 text-emerald-300" />
                   <span>WhatsApp Chat</span>
@@ -79,7 +79,7 @@ export const ContactPage = () => {
                   href={restaurantInfo.contact.googleMapsDirections}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-[#DFBE7A] to-[#C89D4B] text-[#1A0E0A] font-bold text-xs sm:text-sm hover:brightness-105 shadow-xs transition-all"
+                  className="flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#DFBE7A] to-[#C89D4B] text-[#1A0E0A] font-bold text-xs sm:text-sm hover:brightness-105 shadow-xs transition-all"
                 >
                   <Navigation className="w-4 h-4" />
                   <span>Get Directions</span>
@@ -93,13 +93,13 @@ export const ContactPage = () => {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#2A1710] uppercase tracking-wider mb-1">
+                    <h3 className="font-serif font-bold text-sm sm:text-base text-[#2A1710] uppercase tracking-wider mb-1">
                       Full Address
                     </h3>
-                    <p className="text-sm text-stone-700 leading-snug">
+                    <p className="text-sm sm:text-base text-stone-800 font-semibold leading-snug">
                       {language === 'ta' ? restaurantInfo.contact.address.fullTa : restaurantInfo.contact.address.full}
                     </p>
-                    <p className="text-xs text-stone-500 mt-1">
+                    <p className="text-xs sm:text-sm text-stone-600 mt-1 font-medium">
                       Landmark: Located near the National Highway main stretch at Chengilikuppam, Vaniyambadi.
                     </p>
                   </div>
@@ -110,13 +110,13 @@ export const ContactPage = () => {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#2A1710] uppercase tracking-wider mb-1">
+                    <h3 className="font-serif font-bold text-sm sm:text-base text-[#2A1710] uppercase tracking-wider mb-1">
                       Telephone
                     </h3>
-                    <p className="text-base font-bold text-emerald-900">
+                    <p className="text-base sm:text-lg font-bold text-emerald-900">
                       93616 66099 / +91 93616 66099
                     </p>
-                    <p className="text-xs text-stone-500 mt-0.5">
+                    <p className="text-xs sm:text-sm text-stone-600 mt-0.5 font-medium">
                       Customer desk available during dining hours.
                     </p>
                   </div>
@@ -127,10 +127,10 @@ export const ContactPage = () => {
                     <Car className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#2A1710] uppercase tracking-wider mb-1">
+                    <h3 className="font-serif font-bold text-sm sm:text-base text-[#2A1710] uppercase tracking-wider mb-1">
                       Parking & Highway Accessibility
                     </h3>
-                    <p className="text-xs sm:text-sm text-stone-700">
+                    <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-normal">
                       Spacious roadside and front parking for personal cars, SUVs, and tourist buses.
                     </p>
                   </div>
@@ -165,14 +165,14 @@ export const ContactPage = () => {
                 <Compass className="w-5 h-5 text-[#C89D4B]" />
                 <span>Driving Directions & Stopover</span>
               </h3>
-              <p className="text-xs text-stone-600 leading-relaxed mb-4 font-light">
-                If you are travelling along the highway near Vaniyambadi, look out for the Hotel Anandhaas Pure Vegetarian signboard at Chengilikuppam / Chengilikuppam. Direct entrance with dedicated parking right in front.
+              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed mb-4 font-normal">
+                If you are travelling along the highway near Vaniyambadi, look out for the Hotel Anandhaas Pure Vegetarian signboard at Chengilikuppam. Direct entrance with dedicated parking right in front.
               </p>
               <a
                 href={restaurantInfo.contact.googleMapsDirections}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-emerald-800 hover:underline"
               >
                 <span>Navigate on Google Maps</span>
                 <ExternalLink className="w-3.5 h-3.5" />

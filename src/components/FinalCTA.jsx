@@ -27,7 +27,7 @@ export const FinalCTA = () => {
         </h2>
 
         {/* Subtext */}
-        <p className="text-stone-300 text-base sm:text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-10">
+        <p className="text-stone-200 text-base sm:text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed mb-10">
           {t.finalCta.subheading}
         </p>
 
@@ -53,7 +53,7 @@ export const FinalCTA = () => {
 
           <a
             href={restaurantInfo.contact.telLink}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-base border border-white/20 backdrop-blur-md transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-base border border-white/20 backdrop-blur-md transition-all"
           >
             <Phone className="w-4 h-4 text-[#DFBE7A]" />
             <span>{t.finalCta.callNow}</span>
@@ -61,7 +61,7 @@ export const FinalCTA = () => {
         </div>
 
         {/* Address and Timings reminder */}
-        <div className="mt-12 text-xs text-stone-400">
+        <div className="mt-12 text-xs sm:text-sm text-stone-300 font-medium">
           <p>📍 {restaurantInfo.contact.address.full} • Open Daily: 10:30 AM – 11:30 PM</p>
         </div>
 

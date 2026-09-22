@@ -58,16 +58,16 @@ export const Navbar = () => {
               <MapPin className="w-3.5 h-3.5 text-[#C89D4B]" />
               <span>Near NH, Chengilikuppam, Vaniyambadi</span>
             </span>
-            <span className="flex items-center gap-1.5 text-stone-300">
+            <span className="flex items-center gap-1.5 text-stone-200">
               <Clock className="w-3.5 h-3.5 text-[#C89D4B]" />
-              <span>7:30 AM – 11:30 PM</span>
+              <span>{restaurantInfo.timings.displayTime}</span>
             </span>
           </div>
 
           <div className="flex items-center gap-4">
             <a 
               href={restaurantInfo.contact.telLink} 
-              className="flex items-center gap-1.5 text-[#DFBE7A] hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-[#DFBE7A] hover:text-white transition-colors font-medium text-xs sm:text-sm"
             >
               <Phone className="w-3.5 h-3.5 text-[#C89D4B]" />
               <span>{restaurantInfo.contact.displayPhone}</span>
@@ -75,10 +75,10 @@ export const Navbar = () => {
             <span className="text-stone-600">|</span>
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-[#3D2318] hover:bg-[#5C3D2E] text-[#DFBE7A] transition-all border border-[#C89D4B]/30 cursor-pointer active:scale-95"
+              className="flex items-center gap-1 px-2.5 py-1 rounded text-xs bg-[#3D2318] hover:bg-[#5C3D2E] text-[#DFBE7A] transition-all border border-[#C89D4B]/30 cursor-pointer active:scale-95 font-medium"
               aria-label="Toggle language"
             >
-              <Languages className="w-3 h-3" />
+              <Languages className="w-3.5 h-3.5" />
               <span>{language === 'en' ? 'தமிழ்' : 'English'}</span>
             </button>
           </div>
@@ -108,14 +108,14 @@ export const Navbar = () => {
             </motion.div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-serif font-extrabold text-lg sm:text-xl md:text-2xl tracking-tight text-[#2A1710] group-hover:text-[#78350F] transition-colors">
+                <span className="font-serif font-extrabold text-xl sm:text-2xl tracking-tight text-[#2A1710] group-hover:text-[#78350F] transition-colors">
                   HOTEL ANANDHAAS
                 </span>
                 <PureVegSymbol size="sm" className="hidden sm:inline-flex" />
               </div>
-              <div className="flex items-center gap-2 text-[10px] sm:text-xs font-semibold tracking-widest text-[#78350F] uppercase">
+              <div className="flex items-center gap-2 text-xs font-semibold tracking-widest text-[#78350F] uppercase">
                 <span>CHENGILIKUPPAM</span>
-                <span className="inline-block w-1 h-1 rounded-full bg-[#15803D]"></span>
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#15803D]"></span>
                 <span className="text-emerald-800 font-bold">PURE VEGETARIAN</span>
               </div>
             </div>
@@ -129,9 +129,9 @@ export const Navbar = () => {
                 <NavLink
                   key={link.path}
                   to={link.path}
-                  className="relative px-3.5 py-2 rounded-full text-sm font-medium transition-colors"
+                  className="relative px-3.5 py-2 rounded-full text-sm font-semibold transition-colors"
                 >
-                  <span className={`relative z-10 ${isActive ? 'text-[#2A1710] font-bold' : 'text-stone-700 hover:text-[#2A1710]'}`}>
+                  <span className={`relative z-10 ${isActive ? 'text-[#2A1710] font-bold' : 'text-stone-800 hover:text-[#2A1710]'}`}>
                     {link.label}
                   </span>
                   {isActive && (

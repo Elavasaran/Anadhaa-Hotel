@@ -1,4 +1,4 @@
-﻿import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { galleryCategories, galleryItems } from '../data/galleryData';
 import { Lightbox } from '../components/Lightbox';
@@ -47,11 +47,11 @@ export const GalleryPage = () => {
             <span>{t.gallery.badge}</span>
           </div>
 
-          <h1 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h1 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.gallery.heading}
           </h1>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.gallery.subheading}
           </p>
         </div>
@@ -64,10 +64,10 @@ export const GalleryPage = () => {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all shrink-0 ${
+                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-semibold transition-all shrink-0 ${
                   isActive
                     ? 'bg-[#2A1710] text-[#DFBE7A] shadow-md'
-                    : 'bg-white text-stone-600 hover:bg-stone-100 border border-stone-200'
+                    : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-300'
                 }`}
               >
                 {language === 'ta' ? cat.nameTa : cat.name}
@@ -104,7 +104,7 @@ export const GalleryPage = () => {
                 <h3 className="font-serif font-bold text-base sm:text-lg text-white group-hover:text-[#DFBE7A] transition-colors line-clamp-1 mb-1">
                   {language === 'ta' ? item.titleTa : item.title}
                 </h3>
-                <p className="text-xs text-stone-300 line-clamp-1">
+                <p className="text-xs sm:text-sm text-stone-200 line-clamp-1 font-medium">
                   {t.gallery.viewImage}
                 </p>
               </div>
@@ -125,10 +125,10 @@ export const GalleryPage = () => {
         {/* Bottom Highway Visit Banner */}
         <div className="mt-16 p-8 rounded-2xl bg-[#F5EFE6] border border-[#C89D4B]/30 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-left">
-            <h3 className="font-serif font-black text-xl text-[#2A1710] mb-1">
+            <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#2A1710] mb-1">
               Visit Hotel Anandhaas Chengilikuppam in Person
             </h3>
-            <p className="text-xs sm:text-sm text-stone-600">
+            <p className="text-sm text-stone-700 leading-relaxed font-normal">
               Convenient highway access, warm hospitality, and pure vegetarian South Indian meals.
             </p>
           </div>

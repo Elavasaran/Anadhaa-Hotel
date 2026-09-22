@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import interiorImg from '../assets/interior.jpg';
 import { PureVegSymbol } from './PureVegBadge';
@@ -55,7 +55,7 @@ export const RestaurantExperience = () => {
             {t.experience.heading}
           </h2>
 
-          <p className="text-stone-300 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-200 text-base sm:text-lg font-normal leading-relaxed">
             {t.experience.subheading}
           </p>
         </div>
@@ -74,11 +74,11 @@ export const RestaurantExperience = () => {
                 <h3 className="font-serif font-bold text-xl text-[#DFBE7A] mb-2.5">
                   {card.title}
                 </h3>
-                <p className="text-sm text-stone-300 leading-relaxed font-light">
+                <p className="text-sm text-stone-200 leading-relaxed font-normal">
                   {card.desc}
                 </p>
               </div>
-              <div className="mt-6 pt-3 border-t border-white/10 text-[11px] text-[#DFBE7A]/80 uppercase tracking-widest font-semibold">
+              <div className="mt-6 pt-3 border-t border-white/10 text-[11px] text-[#DFBE7A] uppercase tracking-widest font-bold">
                 Anandhaas Quality
               </div>
             </div>

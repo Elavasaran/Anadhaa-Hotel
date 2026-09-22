@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
@@ -49,7 +49,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <p className="text-stone-400 text-sm font-light leading-relaxed max-w-sm">
+            <p className="text-stone-300 text-sm font-normal leading-relaxed max-w-sm">
               {t.footer.brandDesc}
             </p>
 
@@ -58,7 +58,7 @@ export const Footer = () => {
                 <PureVegSymbol size="sm" />
                 <span>100% Pure Veg Kitchen</span>
               </div>
-              <span className="text-xs text-stone-400">⭐ 3.5 (257+ Reviews)</span>
+              <span className="text-xs font-semibold text-stone-300">⭐ 3.5 (257+ Reviews)</span>
             </div>
           </div>
 
@@ -67,12 +67,12 @@ export const Footer = () => {
             <h4 className="font-serif font-bold text-base text-white tracking-wide uppercase border-b border-stone-800 pb-2">
               {t.footer.quickLinks}
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm font-medium">
               {navLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-stone-400 hover:text-[#DFBE7A] transition-colors flex items-center gap-1.5"
+                    className="text-stone-300 hover:text-[#DFBE7A] transition-colors flex items-center gap-1.5"
                   >
                     <span>›</span>
                     <span>{link.label}</span>
@@ -88,10 +88,10 @@ export const Footer = () => {
               {t.footer.contactUs}
             </h4>
             
-            <div className="space-y-3 text-sm text-stone-400">
+            <div className="space-y-3 text-sm text-stone-200">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#DFBE7A] shrink-0 mt-1" />
-                <span>
+                <span className="leading-snug">
                   {language === 'ta' ? restaurantInfo.contact.address.fullTa : restaurantInfo.contact.address.full}
                 </span>
               </div>
@@ -105,7 +105,7 @@ export const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-[#DFBE7A] shrink-0" />
-                <span>Daily: 7:30 AM – 11:30 PM</span>
+                <span>Daily: {restaurantInfo.timings.displayTime}</span>
               </div>
 
               <div className="pt-2">
@@ -126,7 +126,7 @@ export const Footer = () => {
 
         {/* Bottom Bar: Copyright & Compliance */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 text-center sm:text-left">
-          <p>
+          <p className="font-medium text-stone-300">
             © 2026 Hotel Anandhaas Chengilikuppam. {t.footer.rightsReserved}
           </p>
 

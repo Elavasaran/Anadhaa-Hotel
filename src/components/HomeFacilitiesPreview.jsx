@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
@@ -80,11 +80,11 @@ export const HomeFacilitiesPreview = () => {
             <span>{t.homeFacilities.badge}</span>
           </div>
 
-          <h2 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.homeFacilities.heading}
           </h2>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.homeFacilities.subheading}
           </p>
         </div>
@@ -108,24 +108,24 @@ export const HomeFacilitiesPreview = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 
-                <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-[#2A1710]/85 text-[#DFBE7A] text-[10px] font-bold border border-[#DFBE7A]/40 backdrop-blur-xs flex items-center gap-1">
+                <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-[#2A1710]/90 text-[#DFBE7A] text-xs font-semibold border border-[#DFBE7A]/40 backdrop-blur-xs flex items-center gap-1.5">
                   {card.icon}
                   <span>{language === 'ta' ? card.tagTa : card.tag}</span>
                 </div>
               </div>
 
               {/* Card Body */}
-              <div className="p-4 flex-1 flex flex-col justify-between">
+              <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-serif font-bold text-base text-[#2A1710] group-hover:text-[#8C5E1E] transition-colors mb-1.5 line-clamp-1">
+                  <h3 className="font-serif font-bold text-base sm:text-lg text-[#2A1710] group-hover:text-[#8C5E1E] transition-colors mb-2">
                     {card.title}
                   </h3>
-                  <p className="text-xs text-stone-600 leading-relaxed line-clamp-3">
+                  <p className="text-xs sm:text-sm text-stone-700 leading-relaxed line-clamp-3">
                     {card.desc}
                   </p>
                 </div>
 
-                <div className="mt-3 pt-2.5 border-t border-stone-100 flex items-center justify-between text-[11px] font-semibold text-emerald-800">
+                <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs sm:text-sm font-semibold text-emerald-800">
                   <span>Available on-site</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

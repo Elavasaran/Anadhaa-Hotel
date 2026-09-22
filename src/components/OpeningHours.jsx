@@ -55,10 +55,10 @@ export const OpeningHours = () => {
             <Clock className="w-3 h-3 text-[#C89D4B]" />
             <span>{t.timings.badge}</span>
           </div>
-          <h3 className="font-serif font-black text-2xl text-[#2A1710]">
+          <h3 className="font-serif font-bold text-2xl text-[#2A1710]">
             {t.timings.heading}
           </h3>
-          <p className="text-xs text-stone-500 font-medium">
+          <p className="text-xs sm:text-sm text-stone-600 font-medium">
             {restaurantInfo.name}
           </p>
         </div>
@@ -71,13 +71,13 @@ export const OpeningHours = () => {
               <span>{t.timings.statusOpen}</span>
             </div>
           ) : (
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-100 border border-stone-300 text-stone-600 text-xs font-semibold tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-stone-400"></span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-100 border border-stone-300 text-stone-700 text-xs font-semibold tracking-wide">
+              <span className="w-2 h-2 rounded-full bg-stone-500"></span>
               <span>{t.timings.statusClosed}</span>
             </div>
           )}
           {currentTimeStr && (
-            <p className="text-[10px] text-stone-400 mt-1">{currentTimeStr}</p>
+            <p className="text-xs text-stone-500 mt-1 font-medium">{currentTimeStr}</p>
           )}
         </div>
       </div>
@@ -85,25 +85,25 @@ export const OpeningHours = () => {
       {/* Main Timing Highlight */}
       <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#C89D4B]/30 mb-6 flex items-center justify-between">
         <div>
-          <p className="text-xs text-stone-600 font-medium uppercase tracking-wider">
+          <p className="text-xs sm:text-sm text-stone-600 font-bold uppercase tracking-wider">
             Daily Hours
           </p>
           <p className="font-serif font-extrabold text-xl sm:text-2xl text-[#2A1710]">
             {language === 'ta' ? restaurantInfo.timings.displayTimeTa : restaurantInfo.timings.displayTime}
           </p>
         </div>
-        <div className="text-right text-xs text-emerald-800 font-semibold flex items-center gap-1">
+        <div className="text-right text-xs sm:text-sm text-emerald-800 font-bold flex items-center gap-1">
           <Calendar className="w-4 h-4 text-emerald-700" />
           <span>7 Days Open</span>
         </div>
       </div>
 
       {/* Schedule Table */}
-      <div className="space-y-2 mb-6 text-sm">
+      <div className="space-y-2.5 mb-6 text-sm">
         {daysOfWeek.map((day, idx) => (
-          <div key={idx} className="flex items-center justify-between py-1 border-b border-stone-100 last:border-0 text-stone-700">
-            <span className="font-medium text-stone-800">{language === 'ta' ? day.ta : day.en}</span>
-            <span className="text-stone-600 font-mono text-xs">{day.hours}</span>
+          <div key={idx} className="flex items-center justify-between py-1.5 border-b border-stone-100 last:border-0 text-stone-800">
+            <span className="font-semibold text-stone-900">{language === 'ta' ? day.ta : day.en}</span>
+            <span className="text-stone-700 font-mono text-xs sm:text-sm font-medium">{day.hours}</span>
           </div>
         ))}
       </div>

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { OpeningHours } from './OpeningHours';
@@ -18,11 +18,11 @@ export const LocationSection = () => {
             <span>{t.location.badge}</span>
           </div>
 
-          <h2 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.location.heading}
           </h2>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.location.subheading}
           </p>
         </div>
@@ -37,10 +37,10 @@ export const LocationSection = () => {
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-md text-left">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-stone-100">
                 <div>
-                  <h3 className="font-serif font-black text-xl sm:text-2xl text-[#2A1710]">
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#2A1710]">
                     {language === 'ta' ? restaurantInfo.nameTa : restaurantInfo.name}
                   </h3>
-                  <p className="text-xs text-emerald-800 font-bold uppercase tracking-wider mt-0.5">
+                  <p className="text-xs sm:text-sm text-emerald-800 font-bold uppercase tracking-wider mt-0.5">
                     🌿 Pure Vegetarian Restaurant
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export const LocationSection = () => {
                 <div className="flex items-center gap-2">
                   <a
                     href={restaurantInfo.contact.telLink}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2A1710] text-[#DFBE7A] hover:bg-[#3D2318] text-xs font-semibold shadow-xs"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2A1710] text-[#DFBE7A] hover:bg-[#3D2318] text-xs sm:text-sm font-semibold shadow-xs"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call Us</span>
@@ -57,7 +57,7 @@ export const LocationSection = () => {
                     href={restaurantInfo.contact.googleMapsDirections}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 text-xs font-semibold shadow-xs"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 text-xs sm:text-sm font-semibold shadow-xs"
                   >
                     <Navigation className="w-3.5 h-3.5" />
                     <span>Directions</span>
@@ -72,13 +72,13 @@ export const LocationSection = () => {
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">
+                    <h4 className="text-xs sm:text-sm font-bold text-stone-600 uppercase tracking-wider mb-1">
                       {t.location.addressTitle}
                     </h4>
-                    <p className="text-sm font-semibold text-[#2A1710] leading-snug">
+                    <p className="text-sm sm:text-base font-semibold text-[#2A1710] leading-snug">
                       {language === 'ta' ? restaurantInfo.contact.address.fullTa : restaurantInfo.contact.address.full}
                     </p>
-                    <p className="text-xs text-stone-500 mt-1">
+                    <p className="text-xs sm:text-sm text-stone-600 mt-1">
                       Landmark: Near National Highway, Chengilikuppam
                     </p>
                   </div>
@@ -89,16 +89,16 @@ export const LocationSection = () => {
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">
+                    <h4 className="text-xs sm:text-sm font-bold text-stone-600 uppercase tracking-wider mb-1">
                       {t.location.phoneTitle}
                     </h4>
                     <a
                       href={restaurantInfo.contact.telLink}
-                      className="text-base font-bold text-emerald-800 hover:underline block"
+                      className="text-base sm:text-lg font-bold text-emerald-800 hover:underline block"
                     >
                       {restaurantInfo.contact.phone}
                     </a>
-                    <p className="text-xs text-stone-500 mt-1">
+                    <p className="text-xs sm:text-sm text-stone-600 mt-1">
                       Direct Restaurant Enquiries
                     </p>
                   </div>

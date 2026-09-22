@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { PureVegSymbol } from './PureVegBadge';
@@ -72,12 +72,12 @@ export const VegIntro = () => {
             </div>
 
             {/* Main Section Heading */}
-            <h2 className="font-serif font-black text-2xl sm:text-3xl md:text-4xl text-[#2A1710] tracking-tight leading-tight">
+            <h2 className="font-serif font-bold text-2xl sm:text-3xl lg:text-4xl text-[#2A1710] tracking-tight leading-[1.2]">
               {t.vegIntro.heading}
             </h2>
 
             {/* Narrative Paragraph */}
-            <p className="text-base sm:text-lg text-stone-700 font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-stone-800 font-normal leading-relaxed">
               {t.vegIntro.description}
             </p>
 
@@ -91,10 +91,10 @@ export const VegIntro = () => {
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-serif font-bold text-sm sm:text-base text-[#2A1710] mb-0.5">
+                      <h4 className="font-serif font-bold text-base text-[#2A1710] mb-0.5">
                         {pillar.title}
                       </h4>
-                      <p className="text-xs text-stone-600 leading-normal">
+                      <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
                         {pillar.desc}
                       </p>
                     </div>

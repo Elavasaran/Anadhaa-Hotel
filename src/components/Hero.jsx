@@ -55,9 +55,9 @@ export const Hero = () => {
               <span>{t.hero.locationBadge}</span>
             </div>
 
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 border border-stone-600 text-stone-200 text-xs font-normal backdrop-blur-md hidden sm:inline-flex">
-              <Clock className="w-3 h-3 text-[#DFBE7A]" />
-              <span>7:30 AM – 11:30 PM</span>
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/60 border border-stone-600 text-stone-200 text-xs sm:text-sm font-medium backdrop-blur-md hidden sm:inline-flex">
+              <Clock className="w-3.5 h-3.5 text-[#DFBE7A]" />
+              <span>{restaurantInfo.timings.displayTime}</span>
             </div>
           </motion.div>
 
@@ -66,7 +66,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.8 }}
-            className="font-serif font-black text-3xl sm:text-5xl md:text-6xl text-white tracking-tight leading-[1.12] mb-5 drop-shadow-lg text-left"
+            className="font-serif font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.18] mb-5 drop-shadow-md text-left"
           >
             {t.hero.mainHeading}
           </motion.h1>

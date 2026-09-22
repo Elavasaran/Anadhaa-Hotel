@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { restaurantInfo } from '../data/restaurantInfo';
 import { Star, ExternalLink, MessageSquareQuote, CheckCircle } from 'lucide-react';
@@ -17,11 +17,11 @@ export const ReviewsSection = () => {
             <span>{t.reviews.badge}</span>
           </div>
 
-          <h2 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.reviews.heading}
           </h2>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.reviews.subheading}
           </p>
 
@@ -40,12 +40,12 @@ export const ReviewsSection = () => {
 
             <div className="h-6 w-px bg-stone-200 hidden sm:block"></div>
 
-            <div className="text-left text-xs">
-              <p className="font-bold text-stone-800 flex items-center gap-1">
+            <div className="text-left text-xs sm:text-sm">
+              <p className="font-bold text-stone-900 flex items-center gap-1">
                 <span>Google Maps Rating</span>
-                <span className="text-emerald-700 font-normal">● Verified</span>
+                <span className="text-emerald-700 font-semibold">● Verified</span>
               </p>
-              <p className="text-stone-500">257+ Customer Reviews</p>
+              <p className="text-stone-600 font-medium">257+ Customer Reviews</p>
             </div>
           </div>
         </div>
@@ -70,13 +70,13 @@ export const ReviewsSection = () => {
                   </div>
 
                   {/* Google Icon Badge */}
-                  <span className="text-[11px] font-semibold text-stone-400 flex items-center gap-1">
+                  <span className="text-xs font-semibold text-stone-500 flex items-center gap-1">
                     <span className="font-bold text-blue-600">G</span>oogle
                   </span>
                 </div>
 
                 {/* Review Text */}
-                <p className="text-stone-700 text-sm leading-relaxed mb-6 font-normal">
+                <p className="text-stone-800 text-sm sm:text-base leading-relaxed mb-6 font-normal">
                   "{language === 'ta' && rev.tamilText ? rev.tamilText : rev.text}"
                 </p>
               </div>
@@ -84,10 +84,10 @@ export const ReviewsSection = () => {
               {/* Reviewer Name and Source */}
               <div className="pt-4 border-t border-stone-100 flex items-center justify-between">
                 <div>
-                  <h4 className="font-serif font-bold text-sm text-[#2A1710]">
+                  <h4 className="font-serif font-bold text-base text-[#2A1710]">
                     {rev.name}
                   </h4>
-                  <p className="text-[11px] text-stone-400">
+                  <p className="text-xs text-stone-500 font-medium">
                     {rev.date}
                   </p>
                 </div>

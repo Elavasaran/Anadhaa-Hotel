@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { menuHighlights } from '../data/menuData';
@@ -19,11 +19,11 @@ export const FoodHighlights = () => {
             <span>{t.foodHighlights.badge}</span>
           </div>
 
-          <h2 className="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-[#2A1710] tracking-tight mb-4">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-[#2A1710] tracking-tight mb-4">
             {t.foodHighlights.heading}
           </h2>
 
-          <p className="text-stone-600 text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-stone-700 text-base sm:text-lg font-normal leading-relaxed">
             {t.foodHighlights.subheading}
           </p>
         </div>
@@ -49,17 +49,17 @@ export const FoodHighlights = () => {
 
                 {/* Top Badge: Tag & Timing */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-                  <span className="px-2.5 py-1 rounded-md bg-[#2A1710]/85 text-[#DFBE7A] text-[11px] font-semibold tracking-wide backdrop-blur-xs border border-[#C89D4B]/30">
+                  <span className="px-2.5 py-1 rounded-md bg-[#2A1710]/90 text-[#DFBE7A] text-xs font-semibold tracking-wide backdrop-blur-xs border border-[#C89D4B]/30">
                     {language === 'ta' ? item.tagTa : item.tag}
                   </span>
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/90 text-emerald-800 text-[11px] font-bold shadow-xs">
+                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/95 text-emerald-800 text-xs font-bold shadow-xs">
                     <PureVegSymbol size="sm" />
                     <span>Pure Veg</span>
                   </div>
                 </div>
 
                 {/* Bottom Timing Notice */}
-                <div className="absolute bottom-3 left-3 text-white/90 text-xs font-medium drop-shadow">
+                <div className="absolute bottom-3 left-3 text-white text-xs sm:text-sm font-semibold drop-shadow-md">
                   <span>⏱ {item.timing}</span>
                 </div>
               </div>
@@ -67,29 +67,29 @@ export const FoodHighlights = () => {
               {/* Card Body */}
               <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between text-left">
                 <div>
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <h3 className="font-serif font-bold text-xl text-[#2A1710] group-hover:text-[#8C5E1E] transition-colors">
+                  <div className="flex items-start justify-between gap-2 mb-1.5">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#2A1710] group-hover:text-[#8C5E1E] transition-colors">
                       {language === 'ta' ? item.nameTa : item.name}
                     </h3>
                   </div>
 
                   {language !== 'ta' && (
-                    <p className="text-xs font-tamil text-[#78350F] font-medium mb-2.5">
+                    <p className="text-xs sm:text-sm font-tamil text-[#78350F] font-semibold mb-2.5">
                       {item.nameTa}
                     </p>
                   )}
 
-                  <p className="text-stone-600 text-sm font-normal leading-relaxed line-clamp-3">
+                  <p className="text-stone-700 text-sm sm:text-base font-normal leading-relaxed line-clamp-3">
                     {language === 'ta' ? item.descriptionTa : item.description}
                   </p>
                 </div>
 
                 {/* Card Footer */}
-                <div className="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
-                  <span className="font-medium text-emerald-700 flex items-center gap-1">
+                <div className="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs sm:text-sm text-stone-600">
+                  <span className="font-semibold text-emerald-700 flex items-center gap-1">
                     🌿 Freshly Made
                   </span>
-                  <span className="text-stone-400">Authentic South Indian</span>
+                  <span className="text-stone-500 font-medium">Authentic South Indian</span>
                 </div>
               </div>
             </div>
