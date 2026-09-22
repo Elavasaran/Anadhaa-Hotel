@@ -1,30 +1,152 @@
-﻿import exteriorImg from '../assets/exterior.jpg';
+import exteriorImg from '../assets/exterior.jpg';
 import entranceImg from '../assets/entrance.jpg';
+import interiorImg from '../assets/interior.jpg';
 import mealsImg from '../assets/meals.png';
+import dosaSpecialImg from '../assets/dosa_special.jpg';
 import dosaImg from '../assets/dosa.png';
 import parottaImg from '../assets/parotta.png';
 import pongalImg from '../assets/pongal.png';
 import coffeeImg from '../assets/coffee.png';
+import evCharging2 from '../assets/ev_charging_2.jpg';
+import evCharging1 from '../assets/ev_charging_1.jpg';
 import roomKingDeluxe from '../assets/room_king_deluxe.webp';
 import roomFamily4Bed from '../assets/room_family_4bed.webp';
 import roomTwinBed from '../assets/room_twin_bed.webp';
-import receptionWood from '../assets/reception_wood.webp';
+import roomMultiBed from '../assets/room_multi_bed.webp';
 import bathroomImg from '../assets/bathroom_clean.webp';
-import evCharging2 from '../assets/ev_charging_2.jpg';
+import receptionWood from '../assets/reception_wood.webp';
 
 export const galleryCategories = [
-  { id: "all", name: "All Photos", nameTa: "அனைத்தும்" },
-  { id: "rooms", name: "GR Residency Rooms", nameTa: "தங்கும் அறைகள்" },
-  { id: "food", name: "Food Specialties", nameTa: "உணவு வகைகள்" },
-  { id: "restaurant", name: "Restaurant & Exterior", nameTa: "வெளித்தோற்றம்" },
-  { id: "entrance", name: "Entrance & Reception", nameTa: "வரவேற்பு" },
-  { id: "facilities", name: "EV & Parking", nameTa: "சார்ஜிங் & பார்க்கிங்" }
+  { id: "all", name: "All", nameTa: "அனைத்தும்" },
+  { id: "restaurant", name: "Restaurant", nameTa: "உணவகம்" },
+  { id: "food", name: "Food", nameTa: "உணவு வகைகள்" },
+  { id: "facilities", name: "Facilities", nameTa: "வசதிகள்" },
+  { id: "rooms", name: "Rooms", nameTa: "தங்கும் அறைகள்" }
 ];
 
 export const galleryItems = [
+  // ==========================================
+  // SECTION 1 — HOTEL ANANDHAAS / RESTAURANT
+  // ==========================================
+  {
+    id: "gal-restaurant-exterior",
+    title: "Hotel Anandhaas Main Front View & Highway Building",
+    titleTa: "ஹோட்டல் ஆனந்தாஸ் முதன்மை முகப்பு தோற்றம்",
+    category: "restaurant",
+    image: exteriorImg,
+    alt: "Hotel Anandhaas Pure Veg A/C restaurant main front exterior view along NH Highway at Chengilikuppam",
+    featured: true
+  },
+  {
+    id: "gal-restaurant-entrance",
+    title: "Hotel Anandhaas Grand Entrance Corridor",
+    titleTa: "ஆனந்தாஸ் உணவக முகப்பு நுழைவுக்கூடம்",
+    category: "restaurant",
+    image: entranceImg,
+    alt: "Hotel Anandhaas Pure Veg grand glass entrance corridor with warm ambient lighting",
+    featured: true
+  },
+  {
+    id: "gal-restaurant-interior",
+    title: "Air-Conditioned Dining Hall & Family Ambiance",
+    titleTa: "குடும்பத்துடன் உணவருந்தும் குளிரூட்டப்பட்ட அரங்கம்",
+    category: "restaurant",
+    image: interiorImg,
+    alt: "Spacious air-conditioned dining area with comfortable seating and Anandhaas branding",
+    featured: true
+  },
+
+  // ==========================================
+  // SECTION 2 — PURE VEGETARIAN FOOD
+  // ==========================================
+  {
+    id: "gal-food-meals",
+    title: "South Indian Vegetarian Meals",
+    titleTa: "தென்னிந்திய பாரம்பரிய சைவ சாப்பாடு",
+    category: "food",
+    image: mealsImg,
+    alt: "Traditional South Indian vegetarian full thali with sambar, rasam, kootu, poriyal, appalam",
+    featured: true
+  },
+  {
+    id: "gal-food-dosa-special",
+    title: "Traditional Banana-Leaf Dosa Platter with Chutneys & Sambar",
+    titleTa: "வாழை இலை ஸ்பெஷல் மசாலா தோசை",
+    category: "food",
+    image: dosaSpecialImg,
+    alt: "Crispy South Indian dosa served on banana leaf with freshly ground chutneys and sambar",
+    featured: true
+  },
+  {
+    id: "gal-food-dosa",
+    title: "Crispy Golden Ghee Roast Dosa",
+    titleTa: "மொறுமொறுப்பான நெய் ரோஸ்ட் தோசை",
+    category: "food",
+    image: dosaImg,
+    alt: "Crisp golden rolled dosa served with trio of chutneys and piping hot sambar",
+    featured: true
+  },
+  {
+    id: "gal-food-parotta",
+    title: "Flaky Layered Parotta with Spicy Salna",
+    titleTa: "அடுக்கு பரோட்டா மற்றும் காய்கறி குருமா",
+    category: "food",
+    image: parottaImg,
+    alt: "Freshly tossed flaky layered parotta with aromatic vegetable salna",
+    featured: false
+  },
+  {
+    id: "gal-food-pongal",
+    title: "Steaming Ghee Pongal with Roasted Cashews",
+    titleTa: "நெய் மற்றும் முந்திரி வறுத்த வெண் பொங்கல்",
+    category: "food",
+    image: pongalImg,
+    alt: "Hot traditional ghee pongal garnished with crunchy cashews and fresh curry leaves",
+    featured: false
+  },
+  {
+    id: "gal-food-coffee",
+    title: "Authentic Kumbakonam Degree Filter Coffee",
+    titleTa: "கும்பகோணம் டிகிரி ஃபில்டர் காபி",
+    category: "food",
+    image: coffeeImg,
+    alt: "Frothy authentic South Indian filter coffee in traditional brass dabara set",
+    featured: false
+  },
+
+  // ==========================================
+  // SECTION 3 — FACILITIES / TRAVELLER BENEFITS
+  // ==========================================
+  {
+    id: "gal-facility-parking",
+    title: "Spacious Parking Area for Highway Travellers & Cars",
+    titleTa: "விசாலமான பாதுகாப்பான கார் பார்க்கிங்",
+    category: "facilities",
+    image: exteriorImg,
+    alt: "Spacious paved parking lot in front of Hotel Anandhaas for cars and tourist vehicles",
+    featured: false
+  },
+  {
+    id: "gal-facility-ev-1",
+    title: "Jio-bp Pulse Fast EV Charging Station",
+    titleTa: "Jio-bp பல்ஸ் அதிவேக மின்சார வாகன சார்ஜிங் நிலையம்",
+    category: "facilities",
+    image: evCharging2,
+    alt: "Jio-bp pulse fast EV charging station with weather-proof canopy at Hotel Anandhaas Minnur",
+    featured: true
+  },
+  {
+    id: "gal-facility-ev-2",
+    title: "Dual Fast EV Charging Station along NH48 Highway",
+    titleTa: "தேசிய நெடுஞ்சாலை மின்சார வாகன சார்ஜிங் மையம்",
+    category: "facilities",
+    image: evCharging1,
+    alt: "Dual gun fast DC electric vehicle charging points on NH48 highway at Hotel Anandhaas",
+    featured: false
+  },
   {
     id: "gal-room-king",
-    title: "Deluxe King AC Room at GR Residency",
+    title: "Deluxe King AC Bedroom at GR Residency",
     titleTa: "டீலக்ஸ் கிங் ஏசி படுக்கை அறை",
     category: "rooms",
     image: roomKingDeluxe,
@@ -50,16 +172,16 @@ export const galleryItems = [
     featured: false
   },
   {
-    id: "gal-reception",
-    title: "GR Residency Polished Wooden Reception & Lobby",
-    titleTa: "மர வேலைப்பாடுகளுடன் கூடிய வரவேற்பு மற்றும் நடைபாதை",
-    category: "entrance",
-    image: receptionWood,
-    alt: "Polished wooden reception desk and illuminated hallway at GR Residency",
-    featured: true
+    id: "gal-room-multi",
+    title: "Spacious Multi-Bed AC Room for Group Travellers",
+    titleTa: "குழு பயணிகளுக்கான கூடுதல் படுக்கை வசதி கொண்ட ஏசி அறை",
+    category: "rooms",
+    image: roomMultiBed,
+    alt: "Comfortable air conditioned multi-bed accommodation for group stay at GR Residency",
+    featured: false
   },
   {
-    id: "gal-bath",
+    id: "gal-room-bath",
     title: "Clean Modern Bathroom with Marble Tiles & Shower",
     titleTa: "நவீன மற்றும் தூய்மையான குளியலறை",
     category: "rooms",
@@ -68,84 +190,12 @@ export const galleryItems = [
     featured: false
   },
   {
-    id: "gal-1",
-    title: "Hotel Anandhaas Pure Veg & GR Residency Building",
-    titleTa: "ஹோட்டல் ஆனந்தாஸ் முகப்பு தோற்றம் & ஜிஆர் ரெசிடென்சி",
-    category: "restaurant",
-    image: exteriorImg,
-    alt: "Hotel Anandhaas Pure Veg A/C restaurant building and wide car parking lot along the National Highway at Chengilikuppam",
+    id: "gal-room-reception",
+    title: "GR Residency Polished Wooden Reception & Lobby",
+    titleTa: "மர வேலைப்பாடுகளுடன் கூடிய வரவேற்பு மற்றும் நடைபாதை",
+    category: "rooms",
+    image: receptionWood,
+    alt: "Polished wooden reception desk and illuminated hallway at GR Residency",
     featured: true
-  },
-  {
-    id: "gal-2",
-    title: "Hotel Anandhaas Elegant Glass Entrance Corridor",
-    titleTa: "ஆனந்தாஸ் தூய சைவ உணவக முகப்பு நுழைவுக்கூடம்",
-    category: "entrance",
-    image: entranceImg,
-    alt: "Hotel Anandhaas Pure Veg A/C grand glass entrance corridor with warm ambient lighting and greenery",
-    featured: true
-  },
-  {
-    id: "gal-3",
-    title: "Traditional South Indian Banana Leaf Meals",
-    titleTa: "வாழை இலை சாப்பாடு",
-    category: "food",
-    image: mealsImg,
-    alt: "Full South Indian vegetarian thali served on fresh banana leaf with sambar, rasam, kootu, poriyal, vadai, sweet",
-    featured: true
-  },
-  {
-    id: "gal-4",
-    title: "Crispy Golden Dosa with Chutneys & Sambar",
-    titleTa: "மொறுமொறுப்பான நெய் ரோஸ்ட் தோசை",
-    category: "food",
-    image: dosaImg,
-    alt: "Crispy rolled South Indian dosa with coconut chutney, tomato chutney, coriander chutney and sambar",
-    featured: true
-  },
-  {
-    id: "gal-ev",
-    title: "Jio-bp Pulse Fast EV Charging Station",
-    titleTa: "Jio-bp பல்ஸ் அதிவேக மின்சார வாகன சார்ஜிங் நிலையம்",
-    category: "facilities",
-    image: evCharging2,
-    alt: "Jio-bp pulse fast EV charging station with canopy at Hotel Anandhaas Minnur",
-    featured: true
-  },
-  {
-    id: "gal-5",
-    title: "Authentic Filter Coffee in Traditional Dabara",
-    titleTa: "கும்பகோணம் டிகிரி ஃபில்டர் காபி",
-    category: "food",
-    image: coffeeImg,
-    alt: "Frothy authentic South Indian filter coffee in a traditional brass dabara set",
-    featured: false
-  },
-  {
-    id: "gal-6",
-    title: "Flaky Layered Parotta with Spicy Salna",
-    titleTa: "அடுக்கு பரோட்டா மற்றும் குருமா",
-    category: "food",
-    image: parottaImg,
-    alt: "Freshly made layered golden parotta with vegetable salna",
-    featured: false
-  },
-  {
-    id: "gal-7",
-    title: "Steaming Ghee Pongal with Cashews",
-    titleTa: "நெய் மற்றும் முந்திரி பொங்கல்",
-    category: "food",
-    image: pongalImg,
-    alt: "Hot South Indian ghee pongal garnished with roasted cashews and curry leaves on banana leaf",
-    featured: false
-  },
-  {
-    id: "gal-8",
-    title: "Wide Parking Area for Cars & Highway Travellers",
-    titleTa: "விசாலமான கார் பார்க்கிங்",
-    category: "facilities",
-    image: exteriorImg,
-    alt: "Spacious paved parking facility in front of Hotel Anandhaas Chengilikuppam for highway travelers and families",
-    featured: false
   }
 ];
