@@ -12,31 +12,32 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-start bg-stone-900 overflow-hidden">
-      {/* Hero Background Image: Clearly visible and bright */}
+      {/* Hero Background Image: Clearly visible and bright with clear Anandhaas signage */}
       <div className="absolute inset-0 z-0">
         <motion.img
-          initial={{ scale: 1.08 }}
+          initial={{ scale: 1.04 }}
           animate={{ scale: 1.0 }}
-          transition={{ duration: 1.8, ease: "easeOut" }}
+          transition={{ duration: 1.6, ease: "easeOut" }}
           src={exteriorImg}
-          alt="Hotel Anandhaas Chengilikuppam Pure Vegetarian Restaurant Building along NH Highway"
-          className="w-full h-full object-cover object-center brightness-100 contrast-[1.03]"
+          alt="Hotel Anandhaas Chengilikuppam Minnur Pure Vegetarian Restaurant Building along NH Highway"
+          className="w-full h-full object-cover object-[58%_38%] sm:object-[55%_40%] lg:object-[58%_42%] brightness-[1.02] contrast-[1.05]"
           loading="eager"
         />
         
-        {/* Soft Left-to-Right Scrim Gradient for Text Legibility (Keeps the right side building and sky crystal clear) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A0E0A]/90 via-[#1A0E0A]/55 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1A0E0A]/80 via-transparent to-black/20"></div>
+        {/* Directional Scrim: Dark on the left under text, crystal clear in center & right where 'Anandhaas' signage shines */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#140A07]/95 via-[#140A07]/75 sm:via-[#140A07]/50 sm:via-40% md:via-45% to-transparent pointer-events-none"></div>
+        {/* Subtle Top Navbar and Bottom Section blend */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent via-20% to-[#140A07]/60 pointer-events-none"></div>
       </div>
 
-      {/* Content Container - Strictly Left-Aligned */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 flex justify-start items-center">
+      {/* Content Container - Strictly Left-Aligned to keep right-side building & signage in full view */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28 flex justify-start items-center">
         
         <motion.div 
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-full max-w-2xl text-left flex flex-col items-start justify-start backdrop-blur-[2px] bg-black/20 sm:bg-transparent p-4 sm:p-0 rounded-3xl"
+          className="w-full max-w-xl lg:max-w-[580px] xl:max-w-2xl text-left flex flex-col items-start justify-start p-2 sm:p-0"
         >
           {/* Pure Veg & Highway Badges */}
           <motion.div 
