@@ -160,23 +160,6 @@ export const roomsGalleryItems = [
     alt: "Polished wooden reception desk and lighted hallway corridor at GR Residency Hotel Anandhaas",
     featured: true
   },
-<<<<<<< HEAD
-
-  {
-    id: "room-3",
-    title: "Hotel Anandhaas Pure Veg & GR Residency Building",
-    titleTa: "ஹோட்டல் ஆனந்தாஸ் & ஜிஆர் ரெசிடென்சி கட்டடம்",
-    category: "interior",
-    image: exteriorImg,
-    alt: "GR Residency and Hotel Anandhaas building facade along NH Highway at Chengilikuppam",
-    featured: true
-  },
-  {
-    id: "room-4",
-    title: "Welcoming Glass Entrance Corridor & Greenery",
-    titleTa: "ஆனந்தாஸ் முகப்பு நடைபாதை மற்றும் வரவேற்புக்கூடம்",
-    category: "interior",
-=======
   {
     id: "bathroom-modern",
     title: "Clean & Modern Bathroom with Black & Cream Marble Tiles",
@@ -191,7 +174,6 @@ export const roomsGalleryItems = [
     title: "Hotel Anandhaas Pure Veg A/C Grand Glass Corridor",
     titleTa: "ஆனந்தாஸ் தூய சைவ உணவக முகப்பு நுழைவுக்கூடம்",
     category: "reception",
->>>>>>> 3f3d8d308b0039f0e69d52c7b4273723c263fd54
     image: entranceImg,
     alt: "Hotel Anandhaas Pure Veg A/C grand glass entrance corridor with warm lighting and plants",
     featured: false
