@@ -1,5 +1,38 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Etna Sans Serif', 'Etna', 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Etna Sans Serif', 'Etna', 'Outfit', system-ui, sans-serif;
+  --font-brand: 'Etna Sans Serif', 'Etna', 'Outfit', system-ui, sans-serif;
+}
+
+/* ==================================================
+   ETNA SANS SERIF TYPOGRAPHY DEFINITIONS
+   ================================================== */
+@font-face {
+  font-family: 'Etna';
+  src: url('./assets/fonts/etna.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/87013/etnafreefont.woff') format('woff'),
+       local('Etna'),
+       local('Etna Sans'),
+       local('Etna Sans Serif');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Etna Sans Serif';
+  src: url('./assets/fonts/etna.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/87013/etnafreefont.woff') format('woff'),
+       local('Etna'),
+       local('Etna Sans'),
+       local('Etna Sans Serif');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --color-cream: #FDFBF7;
@@ -14,21 +47,25 @@
     --color-veg-dark: #0D5426;
   }
 
-  body {
+  html, body {
     background-color: var(--color-cream);
     color: var(--color-brown-deep);
-    font-family: 'Outfit', 'Nunito', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Etna Sans Serif', 'Etna', 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, .font-serif, .font-brand {
-    font-family: 'Outfit', 'Nunito', 'Plus Jakarta Sans', system-ui, sans-serif;
+  h1, h2, h3, h4, h5, h6, .font-serif, .font-brand {
+    font-family: 'Etna Sans Serif', 'Etna', 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
     font-weight: 800;
   }
 
   .font-cormorant, .font-serif-luxury {
-    font-family: 'Outfit', 'Nunito', sans-serif;
+    font-family: 'Etna Sans Serif', 'Etna', 'Outfit', sans-serif;
     font-weight: 700;
+  }
+
+  button, input, select, textarea, a, p, span {
+    font-family: inherit;
   }
 
   .font-tamil {
